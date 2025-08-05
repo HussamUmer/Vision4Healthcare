@@ -1,4 +1,4 @@
-# 🧠 Vision4Health
+# 🧠 Vision4Healthcare
 
 Welcome to **Vision4Health**, a curated collection of deep learning algorithms applied to **medical imaging**. This repository aims to showcase modern architectures, comparative performance analysis, and practical implementations of vision models on real-world healthcare datasets.
 
