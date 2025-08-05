@@ -51,7 +51,7 @@ Feel free to use, modify, and share with attribution.
 Created and maintained by **[Hussam Umer](https://github.com/HussamUmer)** – a passionate AI researcher focused on making healthcare more intelligent, accessible, and reliable through deep learning.  
 
 Follow the journey and stay tuned for more releases. ✨  
-For feedback or collaboration: 📧 [Email Me](mail to: hussamumer28092000@gmail.com)
+For feedback or collaboration: 📧 [Email Me](mailto:hussamumer28092000@gmail.com)
 
 ---
 
