@@ -51,15 +51,12 @@ Feel free to use, modify, and share with attribution.
 Created and maintained by **[Hussam Umer](https://github.com/HussamUmer)** – a passionate AI researcher focused on making healthcare more intelligent, accessible, and reliable through deep learning.  
 
 Follow the journey and stay tuned for more releases. ✨  
-For feedback or collaboration: 📧 [Email Me](mailto:youremail@example.com)
+For feedback or collaboration: 📧 [Email Me](hussamumer28092000@gmail.com)
 
 ---
 
-## 🌐 Badges (Optional, but highly recommended!)
+## 🌐 Badges
 
-Add these later to your README:
-
-```markdown
 ![Python](https://img.shields.io/badge/Python-3.10-blue.svg)
 ![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen)
