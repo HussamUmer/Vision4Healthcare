@@ -27,7 +27,7 @@ Each model was trained, validated, and tested using the **exact same data splits
 
 | Model | Colab Link |
 |-------|------------|
-| 🧠 Simple CNN | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://github.com/HussamUmer/Vision4Healthcare/blob/main/DeepCovid_X/Colab%20Notebooks/CNN_Covid_Radiography.ipynb) |
+| 🧠 Simple CNN | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/HussamUmer/Vision4Healthcare/blob/main/DeepCovid_X/Colab%20Notebooks/CNN_Covid_Radiography.ipynb) |
 | ⚡ EfficientNet-B0 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](YOUR_COLAB_LINK_EFFICIENTNET) |
 | 📱 MobileNetV2 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](YOUR_COLAB_LINK_MOBILENET) |
 | 🏛 VGG16 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](YOUR_COLAB_LINK_VGG16) |
