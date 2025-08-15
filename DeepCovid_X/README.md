@@ -56,12 +56,16 @@ Each model was trained, validated, and tested using the **exact same data splits
 
 ### 1️⃣ Confusion Matrices (Test Set)
 
-| Model | Confusion Matrix |
-|-------|------------------|
-| 🧠 Simple CNN | ![Simple CNN CM](DeepCovid_X/Results_Graphs/ConfusionMatrices/Mobilenetcm.png) |
-| ⚡ EfficientNet-B0 | ![EfficientNet CM](path/to/efficientnet_cm.png) |
-| 📱 MobileNetV2 | ![MobileNet CM](https://github.com/HussamUmer/Vision4Healthcare/blob/main/DeepCovid_X/Results_Graphs/ConfusionMatrices/Mobilenetcm.png) |
-| 🏛 VGG16 | ![VGG16 CM](path/to/vgg16_cm.png) |
+### ​​​ Confusion Matrices (Test Set)
+
+| **Simple CNN** | **EfficientNet-B0** |
+|----------------|----------------------|
+| ![Simple CNN CM](https://github.com/HussamUmer/Vision4Healthcare/blob/main/DeepCovid_X/Results_Graphs/ConfusionMatrices/SimpleCNNcm.png) | ![EfficientNet-B0 CM](https://github.com/HussamUmer/Vision4Healthcare/blob/main/DeepCovid_X/Results_Graphs/ConfusionMatrices/EfficientNetcm.png) |
+
+| **MobileNetV2** | **VGG16** |
+|------------------|------------|
+| ![MobileNetV2 CM](https://github.com/HussamUmer/Vision4Healthcare/blob/main/DeepCovid_X/Results_Graphs/ConfusionMatrices/Mobilenetcm.png) | ![VGG16 CM](https://github.com/HussamUmer/Vision4Healthcare/blob/main/DeepCovid_X/Results_Graphs/ConfusionMatrices/VGG16cm.png) |
+
 
 ---
 
