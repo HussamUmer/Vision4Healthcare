@@ -105,7 +105,7 @@ Each model was trained, validated, and tested using the **exact same data splits
 
 ---
 
-## 📊 Performance Comparison
+### 5️⃣ 📊 Performance Comparison
 
 The following plot shows a comparative overview of the performance metrics (accuracy, precision, recall, F1-score, training/testing time, and GPU usage) across all models:
 
