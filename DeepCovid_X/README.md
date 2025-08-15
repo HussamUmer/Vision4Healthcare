@@ -60,7 +60,7 @@ Each model was trained, validated, and tested using the **exact same data splits
 |-------|------------------|
 | 🧠 Simple CNN | ![Simple CNN CM](DeepCovid_X/Results_Graphs/ConfusionMatrices/Mobilenetcm.png) |
 | ⚡ EfficientNet-B0 | ![EfficientNet CM](path/to/efficientnet_cm.png) |
-| 📱 MobileNetV2 | ![MobileNet CM](path/to/mobilenet_cm.png) |
+| 📱 MobileNetV2 | ![MobileNet CM](https://github.com/HussamUmer/Vision4Healthcare/blob/main/DeepCovid_X/Results_Graphs/ConfusionMatrices/Mobilenetcm.png) |
 | 🏛 VGG16 | ![VGG16 CM](path/to/vgg16_cm.png) |
 
 ---
