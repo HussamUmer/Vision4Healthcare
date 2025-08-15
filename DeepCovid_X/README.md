@@ -94,12 +94,14 @@ Each model was trained, validated, and tested using the **exact same data splits
 
 ### 4️⃣ Performance Statistics
 
+
 | Model | Training Time (s) | Peak GPU (MB) | Testing Time (s) | Test GPU (MB) |
-|-------|-------------------|---------------|------------------|---------------|
-| 🧠 Simple CNN | -- | -- | -- | -- |
-| ⚡ EfficientNet-B0 | -- | -- | -- | -- |
-| 📱 MobileNetV2 | -- | -- | -- | -- |
-| 🏛 VGG16 | -- | -- | -- | -- |
+|-------|-----------------|---------------|-----------------|---------------|
+| 🧠 Simple CNN | 801.39 | 1820.73 | 108.79 | 1820.73 |
+| ⚡ EfficientNet-B0 | 235.97 | 2833.55 | 270.72 | 417.83 |
+| 📱 MobileNetV2 | 1009.05 | 2503.03 | 4.11 | 391.01 |
+| 🏛 VGG16 | 767.30 | 4272.32 | 102.36 | 4272.32 |
+
 
 ---
 
@@ -127,7 +129,6 @@ Each model was trained, validated, and tested using the **exact same data splits
 
 To check the **t-SNE visualizations** of all models, [click here](https://github.com/HussamUmer/Vision4Healthcare/tree/main/DeepCovid_X/Results_Graphs/tsne).
 
----
 
 #### 📈 Confidence Distribution
 
