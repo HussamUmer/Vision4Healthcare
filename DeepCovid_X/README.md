@@ -56,11 +56,10 @@ Each model was trained, validated, and tested using the **exact same data splits
 
 ### 1️⃣ Confusion Matrices (Test Set)
 
-### ​​​ Confusion Matrices (Test Set)
 
 | **Simple CNN** | **EfficientNet-B0** |
 |----------------|----------------------|
-| ![Simple CNN CM](https://github.com/HussamUmer/Vision4Healthcare/blob/main/DeepCovid_X/Results_Graphs/ConfusionMatrices/cnncm.png) | ![EfficientNet-B0 CM](https://github.com/HussamUmer/Vision4Healthcare/blob/main/DeepCovid_X/Results_Graphs/ConfusionMatrices/efficientNetcm.png) |
+| ![Simple CNN CM](https://github.com/HussamUmer/Vision4Healthcare/blob/main/DeepCovid_X/Results_Graphs/ConfusionMatrices/cnncm.png) | ![EfficientNet-B0 CM](https://github.com/HussamUmer/Vision4Healthcare/blob/main/DeepCovid_X/Results_Graphs/ConfusionMatrices/efficientnetcm.png) |
 
 | **MobileNetV2** | **VGG16** |
 |------------------|------------|
