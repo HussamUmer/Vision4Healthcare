@@ -106,19 +106,8 @@ Each model was trained, validated, and tested using the **exact same data splits
 
 ---
 
-### 6️⃣ t-SNE Visualizations
 
-**t-SNE (t-distributed Stochastic Neighbor Embedding)** shows how well the model separates different classes in a low-dimensional feature space.  
-- Helps understand the internal feature representations learned by the model.  
-- Closer points → similar features; clusters → good class separation.  
 
-| **Simple CNN** | **EfficientNet-B0** |
-|----------------|--------------------|
-| ![Simple CNN t-SNE](https://github.com/HussamUmer/Vision4Healthcare/blob/main/DeepCovid_X/Results_Graphs/tsne/tsnecnn.png) | ![EfficientNet-B0 t-SNE](https://github.com/HussamUmer/Vision4Healthcare/blob/main/DeepCovid_X/Results_Graphs/tsne/tsneeffecientnet.png) |
-
-| **MobileNetV2** | **VGG16** |
-|-----------------|------------|
-| ![MobileNetV2 t-SNE](https://github.com/HussamUmer/Vision4Healthcare/blob/main/DeepCovid_X/Results_Graphs/tsne/tsnemobilenet.png) | ![VGG16 t-SNE](https://github.com/HussamUmer/Vision4Healthcare/blob/main/DeepCovid_X/Results_Graphs/tsne/tsnevgg16.png) |
 
 
 
@@ -126,10 +115,24 @@ Each model was trained, validated, and tested using the **exact same data splits
 
 ---
 
-### Overall Performance Graph
+### 6️⃣ Overall Performance Graph
 
 *(Insert comparative accuracy/precision/recall/F1 graph here)*  
 ![Overall Metrics Graph](path/to/overall_graph.png)
+
+---
+### 7️⃣ Other Metrics
+
+#### 📊 t-SNE Visualizations
+
+To check the **t-SNE visualizations** of all models, [click here](https://github.com/HussamUmer/Vision4Healthcare/tree/main/DeepCovid_X/Results_Graphs/tsne).
+
+---
+
+#### 📈 Confidence Distribution
+
+To check the **Confidence Distribution graphs** of all models, [click here](https://github.com/HussamUmer/Vision4Healthcare/tree/main/DeepCovid_X/Results_Graphs/ConfidenceDistribution).
+
 
 ---
 
