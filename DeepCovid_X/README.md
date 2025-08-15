@@ -115,7 +115,7 @@ The **Confidence Distribution** shows how certain a model is about its predictio
 
 | **Simple CNN** | **EfficientNet-B0** |
 |----------------|--------------------|
-| ![Simple CNN Confidence](https://github.com/HussamUmer/Vision4Healthcare/blob/main/DeepCovid_X/Results_Graphs/ConfidenceDistribution/confidencecnn.png) | ![EfficientNet Confidence](https://github.com/HussamUmer/Vision4Healthcare/blob/main/DeepCovid_X/Results_Graphs/ConfidenceDistribution/confidenceefficientnet.png) |
+| ![Simple CNN Confidence](https://github.com/HussamUmer/Vision4Healthcare/blob/main/DeepCovid_X/Results_Graphs/ConfidenceDistribution/confidencecnn.png) | ![EfficientNet Confidence](https://github.com/HussamUmer/Vision4Healthcare/blob/main/DeepCovid_X/Results_Graphs/ConfidenceDistribution/confidenceeffcientnet.png) |
 
 | **MobileNetV2** | **VGG16** |
 |-----------------|------------|
