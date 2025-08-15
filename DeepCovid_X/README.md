@@ -106,20 +106,20 @@ Each model was trained, validated, and tested using the **exact same data splits
 
 ---
 
-### 6️⃣ Confidence Distribution
+### 6️⃣ t-SNE Visualizations
 
-The **Confidence Distribution** shows how certain a model is about its predictions.  
-- High confidence for correct predictions → model is reliable.  
-- High confidence for incorrect predictions → model may be overconfident.  
-- Helps analyze the reliability and calibration of the model.
+**t-SNE (t-distributed Stochastic Neighbor Embedding)** shows how well the model separates different classes in a low-dimensional feature space.  
+- Helps understand the internal feature representations learned by the model.  
+- Closer points → similar features; clusters → good class separation.  
 
 | **Simple CNN** | **EfficientNet-B0** |
 |----------------|--------------------|
-| ![Simple CNN Confidence](https://github.com/HussamUmer/Vision4Healthcare/blob/main/DeepCovid_X/Results_Graphs/ConfidenceDistribution/confidencecnn.png) | ![EfficientNet Confidence](https://github.com/HussamUmer/Vision4Healthcare/blob/main/DeepCovid_X/Results_Graphs/ConfidenceDistribution/confidenceeffcientnet.png) |
+| ![Simple CNN t-SNE](https://github.com/HussamUmer/Vision4Healthcare/blob/main/DeepCovid_X/Results_Graphs/tsne/tsnecnn.png) | ![EfficientNet-B0 t-SNE](https://github.com/HussamUmer/Vision4Healthcare/blob/main/DeepCovid_X/Results_Graphs/tsne/tsneeffecientnet.png) |
 
 | **MobileNetV2** | **VGG16** |
 |-----------------|------------|
-| ![MobileNetV2 Confidence](https://github.com/HussamUmer/Vision4Healthcare/blob/main/DeepCovid_X/Results_Graphs/ConfidenceDistribution/confidencemobilenet.png) | ![VGG16 Confidence](https://github.com/HussamUmer/Vision4Healthcare/blob/main/DeepCovid_X/Results_Graphs/ConfidenceDistribution/confidencevgg16.png) |
+| ![MobileNetV2 t-SNE](https://github.com/HussamUmer/Vision4Healthcare/blob/main/DeepCovid_X/Results_Graphs/tsne/tsnemobilenet.png) | ![VGG16 t-SNE](https://github.com/HussamUmer/Vision4Healthcare/blob/main/DeepCovid_X/Results_Graphs/tsne/tsnevgg16.png) |
+
 
 
 
