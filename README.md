@@ -14,7 +14,8 @@ Comparative analysis of multiple CNN architectures (e.g., ResNet, EfficientNet, 
 📁 Explore the full module: [`CNN`](./CNN)
 
 #### 📂 Projects:
-- 🖼️ [Skin Lesion Classification (HAM10000)](./CNN/Skin_Lesion_Classification)
+- 🖼️ [DeepCOVID-X: Comparative Analysis of CNN Architectures on COVID-19 Radiography](./DeepCOVID-X-Comparative-Analysis-of-CNN-Architectures-on-COVID-19-Radiography)
+
 - 🫁 [Chest X-ray Disease Detection (ChestXray14)](./CNN/Chest_Xray_Classification)
 
 Each project includes:
