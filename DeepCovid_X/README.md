@@ -72,14 +72,14 @@ Each model was trained, validated, and tested using the **exact same data splits
 
 | Model | Accuracy (%) | Precision (%) | Recall (%) | F1-Score (%) |
 |-------|--------------|---------------|------------|--------------|
-| 🧠 Simple CNN | -- | -- | -- | -- |
-| ⚡ EfficientNet-B0 | -- | -- | -- | -- |
-| 📱 MobileNetV2 | -- | -- | -- | -- |
-| 🏛 VGG16 | -- | -- | -- | -- |
+| 🧠 Simple CNN | 95.87 | 95.92 | 95.87 | 95.87 |
+| ⚡ EfficientNet-B0 | 97.69 | 97.17 | 97.69 | 97.23 |
+| 📱 MobileNetV2 | 97.03 | 97.13 | 97.03 | 97.04 |
+| 🏛 VGG16 | 97.03 | 97.07 | 97.03 | 97.02 |
 
 ---
 
-##  Classification Performance Metrics
+### 3️⃣ Classification Performance Metrics Visuals
 
 | **Simple CNN** | **EfficientNet-B0** |
 |----------------|----------------------|
@@ -92,7 +92,7 @@ Each model was trained, validated, and tested using the **exact same data splits
 
 ---
 
-### 3️⃣ Performance Statistics
+### 4️⃣ Performance Statistics
 
 | Model | Training Time (s) | Peak GPU (MB) | Testing Time (s) | Test GPU (MB) |
 |-------|-------------------|---------------|------------------|---------------|
@@ -103,7 +103,30 @@ Each model was trained, validated, and tested using the **exact same data splits
 
 ---
 
-### 4️⃣ Overall Performance Graph
+
+---
+
+### 6️⃣ Confidence Distribution
+
+The **Confidence Distribution** shows how certain a model is about its predictions.  
+- High confidence for correct predictions → model is reliable.  
+- High confidence for incorrect predictions → model may be overconfident.  
+- Helps analyze the reliability and calibration of the model.
+
+| **Simple CNN** | **EfficientNet-B0** |
+|----------------|--------------------|
+| ![Simple CNN Confidence](https://github.com/HussamUmer/Vision4Healthcare/blob/main/DeepCovid_X/Results_Graphs/ConfidenceDistribution/confidencecnn.png) | ![EfficientNet Confidence](https://github.com/HussamUmer/Vision4Healthcare/blob/main/DeepCovid_X/Results_Graphs/ConfidenceDistribution/confidenceefficientnet.png) |
+
+| **MobileNetV2** | **VGG16** |
+|-----------------|------------|
+| ![MobileNetV2 Confidence](https://github.com/HussamUmer/Vision4Healthcare/blob/main/DeepCovid_X/Results_Graphs/ConfidenceDistribution/confidencemobilenet.png) | ![VGG16 Confidence](https://github.com/HussamUmer/Vision4Healthcare/blob/main/DeepCovid_X/Results_Graphs/ConfidenceDistribution/confidencevgg16.png) |
+
+
+
+
+---
+
+### Overall Performance Graph
 
 *(Insert comparative accuracy/precision/recall/F1 graph here)*  
 ![Overall Metrics Graph](path/to/overall_graph.png)
