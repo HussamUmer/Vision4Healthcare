@@ -79,6 +79,19 @@ Each model was trained, validated, and tested using the **exact same data splits
 
 ---
 
+##  Classification Performance Metrics
+
+| **Simple CNN** | **EfficientNet-B0** |
+|----------------|----------------------|
+| ![Simple CNN Performance](https://github.com/HussamUmer/Vision4Healthcare/blob/main/DeepCovid_X/Results_Graphs/ClassificationPerformanceMetrics/cnnclass.png) | ![EfficientNet-B0 Performance](https://github.com/HussamUmer/Vision4Healthcare/blob/main/DeepCovid_X/Results_Graphs/ClassificationPerformanceMetrics/efficientnetclass.png) |
+
+| **MobileNetV2** | **VGG16** |
+|------------------|------------|
+| ![MobileNetV2 Performance](https://github.com/HussamUmer/Vision4Healthcare/blob/main/DeepCovid_X/Results_Graphs/ClassificationPerformanceMetrics/mobilenetclass.png) | ![VGG16 Performance](https://github.com/HussamUmer/Vision4Healthcare/blob/main/DeepCovid_X/Results_Graphs/ClassificationPerformanceMetrics/vgg16class.png) |
+
+
+---
+
 ### 3️⃣ Performance Statistics
 
 | Model | Training Time (s) | Peak GPU (MB) | Testing Time (s) | Test GPU (MB) |
