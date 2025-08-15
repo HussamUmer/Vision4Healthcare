@@ -147,10 +147,17 @@ To check the **Confidence Distribution graphs** of all models, [click here](http
 ---
 
 ## 📌 Key Insights
-- Pretrained models (EfficientNet, MobileNet, VGG16) generally outperform the custom CNN.
-- MobileNetV2 offers an excellent trade-off between **accuracy and speed**.
-- t-SNE visualizations reveal clear class separation in higher-performing models.
-- Misclassifications often occur between **COVID-19 and Viral Pneumonia**.
+
+- **Best Accuracy:** EfficientNet-B0 achieved the highest accuracy (97.69%) and F1-score (97.23%), slightly outperforming MobileNetV2 and VGG16.  
+- **Precision & Recall:** Modern architectures (EfficientNet-B0 & MobileNetV2) maintain high precision and recall, reducing false positives and negatives.  
+- **Training Efficiency:** EfficientNet-B0 trained fastest (235.97 s), while MobileNetV2 required the longest (1009.05 s). VGG16 consumes the most GPU memory.  
+- **Testing Performance:** MobileNetV2 is suitable for real-time inference due to its low test time, while EfficientNet-B0 balances accuracy and reasonable test speed.  
+- **Deployment Recommendation:**  
+  - Real-time/low-resource: MobileNetV2  
+  - Maximum accuracy: EfficientNet-B0  
+  - Lightweight/low GPU: Simple CNN  
+
+💡 **Conclusion:** Pre-trained models significantly improve COVID-19 detection performance over a simple CNN. Model choice depends on accuracy vs. speed vs. resource trade-offs.
 
 ---
 
