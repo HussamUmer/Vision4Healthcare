@@ -105,6 +105,12 @@ Each model was trained, validated, and tested using the **exact same data splits
 
 ---
 
+## 📊 Performance Comparison
+
+The following plot shows a comparative overview of the performance metrics (accuracy, precision, recall, F1-score, training/testing time, and GPU usage) across all models:
+
+![Performance Comparison](https://github.com/HussamUmer/Vision4Healthcare/blob/main/DeepCovid_X/Results_Graphs/Performance/newplot.png)
+
 
 ---
 
