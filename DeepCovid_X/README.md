@@ -111,22 +111,12 @@ The following plot shows a comparative overview of the performance metrics (accu
 
 ![Performance Comparison](https://github.com/HussamUmer/Vision4Healthcare/blob/main/DeepCovid_X/Results_Graphs/Performance/newplot.png)
 
-
----
-
-
-
-
-
-
-
-
 ---
 
 ### 6️⃣ Overall Performance Graph
 
-*(Insert comparative accuracy/precision/recall/F1 graph here)*  
-![Overall Metrics Graph](path/to/overall_graph.png)
+![Classification Performance Metrics](https://raw.githubusercontent.com/HussamUmer/Vision4Healthcare/main/DeepCovid_X/Results_Graphs/ClassificationPerformanceMetrics/newplot%20(1).png)
+
 
 ---
 ### 7️⃣ Other Metrics
