@@ -14,7 +14,7 @@ Comparative analysis of multiple CNN architectures (e.g., ResNet, EfficientNet, 
 📁 Explore the full module: [`CNN`](./CNN)
 
 #### 📂 Projects:
-- 🖼️ [DeepCOVID-X: Comparative Analysis of CNN Architectures on COVID-19 Radiography](./DeepCOVID-X-Comparative-Analysis-of-CNN-Architectures-on-COVID-19-Radiography)
+- 🖼️ [DeepCOVID-X: Comparative Analysis of CNN Architectures on COVID-19 Radiography](./DeepCOVID-X:Comparative%10Analysis%20of%20CNN%20Architectures%20on%20COVID-19%20Radiography)
 
 - 🫁 [Chest X-ray Disease Detection (ChestXray14)](./CNN/Chest_Xray_Classification)
 
