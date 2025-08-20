@@ -1,11 +1,9 @@
 # 🩻 X-ray Image Segmentation using U-Net 🧠  
 
-[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/<your-username>/<your-repo>/blob/main/xray_segmentation_unet.ipynb)  
-![Python](https://img.shields.io/badge/Python-3.10-blue?logo=python)  
-![PyTorch](https://img.shields.io/badge/Framework-PyTorch-orange?logo=pytorch)  
-![License](https://img.shields.io/github/license/<your-username>/<your-repo>)  
-![Stars](https://img.shields.io/github/stars/<your-username>/<your-repo>?style=social)  
-![Forks](https://img.shields.io/github/forks/<your-username>/<your-repo>?style=social)
+![Python](https://img.shields.io/badge/Python-3.9%2B-blue?logo=python&logoColor=white)
+![PyTorch](https://img.shields.io/badge/PyTorch-1.12+-ee4c2c?logo=pytorch&logoColor=white)
+![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)
+![Colab](https://img.shields.io/badge/Run%20on-Colab-orange?logo=googlecolab)
 
 ---
 
