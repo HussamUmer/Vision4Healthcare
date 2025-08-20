@@ -48,8 +48,8 @@ x-ray/
 
 ### **1. Clone the Repository**
 ```bash
-git clone https://github.com/<your-username>/<your-repo>.git
-cd <your-repo>
+git clone https://github.com/HussamUmer/Vision4Healthcare.git
+cd Vision4Healthcare
 
 
 ```
