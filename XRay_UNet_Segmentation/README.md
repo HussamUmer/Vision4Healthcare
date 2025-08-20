@@ -51,3 +51,8 @@ x-ray/
 git clone https://github.com/<your-username>/<your-repo>.git
 cd <your-repo>
 
+
+```
+## Run on Colab
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/HussamUmer/Vision4Healthcare/blob/main/XRay_UNet_Segmentation.ipynb) |
