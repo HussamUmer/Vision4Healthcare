@@ -55,4 +55,5 @@ cd <your-repo>
 ```
 ## Run on Colab
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/HussamUmer/Vision4Healthcare/blob/main/Notebook%20File/U_Net_X_Ray.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/HussamUmer/Vision4Healthcare/blob/main/XRay_UNet_Segmentation/Notebook%20File/U_Net_X_Ray.ipynb)
+
