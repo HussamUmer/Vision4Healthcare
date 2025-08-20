@@ -1,31 +1,45 @@
 # 🧠 Vision4Healthcare
 
-Welcome to **Vision4Health**, a curated collection of deep learning algorithms applied to **medical imaging**. This repository aims to showcase modern architectures, comparative performance analysis, and practical implementations of vision models on real-world healthcare datasets.
+Welcome to **Vision4Healthcare**, my **virtual AI lab** 🧪 — a place where I **experiment with cutting-edge deep learning algorithms**, share my **learning process**, and showcase **real-world medical imaging projects**.  
+This repository reflects my continuous journey of **exploration, research, and implementation** in healthcare-focused computer vision.
 
-> 🔬 Empowering health diagnostics with deep learning and transparency.
+> 🔬 Empowering health diagnostics with deep learning, innovation, and transparency.
 
 ---
 
 ## 📚 Repository Structure
 
-### 🔎 1. CNN-Based Medical Image Classification
-Comparative analysis of multiple CNN architectures (e.g., ResNet, EfficientNet, DenseNet, Inception, MobileNet) applied to two publicly available and balanced medical datasets.
+This repository contains organized modules, each focusing on a specific area of **medical imaging research**:
 
-📁 Explore the full module: [`CNN`](./CNN)
+---
+
+### 🔎 1. CNN-Based Medical Image Classification
+Comparative analysis of multiple CNN architectures (e.g., ResNet, EfficientNet, DenseNet, Inception, MobileNet) applied to publicly available and balanced medical datasets.
 
 #### 📂 Projects:
 - 🖼️ [DeepCOVID-X: Comparative Analysis of CNN Architectures on COVID-19 Radiography](https://github.com/HussamUmer/Vision4Healthcare/tree/main/DeepCovid_X)
 
-
-
-- 🫁 [Chest X-ray Disease Detection (ChestXray14)](./CNN/Chest_Xray_Classification)
-
 Each project includes:
 - 📊 Model comparisons  
 - 📈 Accuracy, precision, recall, F1-score  
-- 🧪 Confusion matrix, Grad-CAMs  
+- 🧪 Confusion matrix & Grad-CAMs  
 - ⚖️ Balanced dataset splits  
-- 📜 Training logs and analysis notebooks
+- 📜 Training logs & analysis notebooks
+
+---
+
+### 🩻 2. Medical Image Segmentation Projects
+This module focuses on **image segmentation tasks** in medical imaging using **U-Net** and other advanced architectures.  
+Here, I explore algorithms that **identify, separate, and analyze specific regions** from medical scans such as **X-rays, MRIs, and CT images**.
+
+#### 📂 Projects:
+- 🧩 [X-Ray Lung Segmentation using U-Net](https://github.com/HussamUmer/Vision4Healthcare/tree/main/XRay_UNet_Segmentation)
+
+Each segmentation project includes:
+- 🧠 Deep learning models for pixel-wise segmentation  
+- 🎨 Visualization of masks, overlays, and predictions  
+- 📊 Training & validation metrics with Dice, IoU, Accuracy  
+- 📜 Well-documented notebooks for reproducibility
 
 ---
 
@@ -34,7 +48,6 @@ Each project includes:
 | Module | Description | ETA |
 |--------|-------------|-----|
 | 🧠 Vision Transformers | ViT, Swin Transformer, MedViT on MRI & CT datasets | Sep 2025 |
-| 🧬 Image Segmentation | U-Net, Attention U-Net, TransUNet for tumor/organ segmentation | Oct 2025 |
 | 🎯 Object Detection | YOLOv8, Faster R-CNN for lesion localization | Oct–Nov 2025 |
 | 🤝 Model Fusion & Ensembling | Combining CNN + ViT + GANs | Nov–Dec 2025 |
 | 🔄 Knowledge Distillation | For efficient deployment on edge devices | Winter 2025 |
@@ -51,7 +64,7 @@ Feel free to use, modify, and share with attribution.
 
 ## 💡 About
 
-Created and maintained by **[Hussam Umer](https://github.com/HussamUmer)** – a passionate AI researcher focused on making healthcare more intelligent, accessible, and reliable through deep learning.  
+Created and maintained by **[Hussam Umer](https://github.com/HussamUmer)** – a passionate AI researcher focused on making healthcare **more intelligent, accurate, and accessible** through deep learning.  
 
 Follow the journey and stay tuned for more releases. ✨  
 For feedback or collaboration: 📧 [Email Me](mailto:hussamumer28092000@gmail.com)
