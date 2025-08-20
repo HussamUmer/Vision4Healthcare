@@ -26,8 +26,8 @@ This project uses a dataset containing **704 X-ray images** and their correspond
 
 **Structure:**  
 x-ray/
--├── images/ # Original X-ray images
--└── masks/ # Binary segmentation masks
+- ├── images/ # Original X-ray images
+- └── masks/ # Binary segmentation masks
 
 
 - Images are grayscale `.png` / `.jpg`
