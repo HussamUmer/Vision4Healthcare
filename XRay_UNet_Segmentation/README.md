@@ -53,11 +53,35 @@ cd <your-repo>
 
 
 ```
+---
 ## Run on Colab
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/HussamUmer/Vision4Healthcare/blob/main/XRay_UNet_Segmentation/Notebook%20File/U_Net_X_Ray.ipynb)
 
+---
+
 ## 📈 Training Progress
 
 ![Training vs Validation Loss & Dice](https://raw.githubusercontent.com/HussamUmer/Vision4Healthcare/main/XRay_UNet_Segmentation/Outputs/download%20(2).png)
+
+---
+
+## 🏆 Results
+
+After **100 epochs**, the model achieved **excellent segmentation performance**:
+
+| Dataset | Loss   | Dice   | IoU    | Accuracy |
+|---------|--------|--------|--------|-----------|
+| **Train** | 0.0891 | 0.9525 | 0.9107 | 0.9765 |
+| **Val**   | 0.0814 | 0.9611 | 0.9264 | 0.9796 |
+| **Test**  | 0.0751 | 0.9640 | 0.9311 | 0.9816 |
+
+---
+
+## 🖼️ Predicted vs Ground Truth
+
+![Predicted vs Ground Truth By Trained Model](https://raw.githubusercontent.com/HussamUmer/Vision4Healthcare/main/XRay_UNet_Segmentation/Outputs/predicted.png)
+
+---
+
 
