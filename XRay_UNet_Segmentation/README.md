@@ -85,4 +85,45 @@ Predicted vs Ground Truth by our trained model:
 
 ---
 
+## 🛠️ How to Use
+### 1. Inference on Single Image
 
+```
+from model import UNet
+from inference import predict_mask
+import torch
+
+# Load model
+model = UNet(in_ch=1, out_ch=1)
+model.load_state_dict(torch.load("best_unet.pth", map_location="cpu"))
+model.eval()
+
+# Predict mask
+mask = predict_mask(model, "path/to/image.png")
+
+```
+### 2. Evaluate Model on Test Set
+
+```
+
+python evaluate.py --weights best_unet.pth
+
+```
+---
+
+## 📌 Tech Stack
+```
+- Language: Python 3.10+
+- Framework: PyTorch
+- Augmentation: Albumentations
+- Visualization: Matplotlib, OpenCV
+- Training Environment: Google Colab 
+```
+---
+
+## 📜 License
+
+This project is licensed under the MIT License.
+You are free to use, modify, and distribute it.
+
+---
