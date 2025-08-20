@@ -80,6 +80,7 @@ After **100 epochs**, the model achieved **excellent segmentation performance**:
 
 ## 🖼️ Predicted vs Ground Truth
 
+Predicted vs Ground Truth by our trained model:
 ![Predicted vs Ground Truth By Trained Model](https://raw.githubusercontent.com/HussamUmer/Vision4Healthcare/main/XRay_UNet_Segmentation/Outputs/Predicted.png)
 
 ---
