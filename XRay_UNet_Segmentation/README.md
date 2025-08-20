@@ -58,6 +58,6 @@ cd <your-repo>
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/HussamUmer/Vision4Healthcare/blob/main/XRay_UNet_Segmentation/Notebook%20File/U_Net_X_Ray.ipynb)
 
 ## 📈 Training Progress
-![Training vs Validation Loss & Dice]
-(https://raw.githubusercontent.com/HussamUmer/Vision4Healthcare/main/XRay_UNet_Segmentation/Outputs/download%20(2).png)
+
+![Training vs Validation Loss & Dice](https://raw.githubusercontent.com/HussamUmer/Vision4Healthcare/main/XRay_UNet_Segmentation/Outputs/download%20(2).png)
 
