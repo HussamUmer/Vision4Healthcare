@@ -66,13 +66,12 @@ cd Vision4Healthcare
 
 ## 🏆 Results
 
-After **100 epochs**, the model achieved **excellent segmentation performance**:
+After **39 epochs**, the model achieved **excellent segmentation performance**:
 
-| Dataset | Loss   | Dice   | IoU    | Accuracy |
-|---------|--------|--------|--------|-----------|
-| **Train** | 0.0891 | 0.9525 | 0.9107 | 0.9765 |
-| **Val**   | 0.0814 | 0.9611 | 0.9264 | 0.9796 |
-| **Test**  | 0.0751 | 0.9640 | 0.9311 | 0.9816 |
+| Dataset   | Loss   | Dice   | IoU    | Accuracy | AUC    |
+|-----------|--------|--------|--------|-----------|--------|
+| **Train** | 0.4865 | 0.8082 | 0.6787 | 0.9658    |   —    |
+| **Test**  | 0.4802 | 0.8129 | 0.6850 | 0.9674    | 0.9727 |
 
 ---
 
