@@ -40,7 +40,7 @@ data/
 
 ### 📷 Dataset Visualization  
 
-![Dataset Visualization](https://raw.githubusercontent.com/HussamUmer/Vision4Healthcare/main/Retina_Vessel_Segmentation/Output/download%20(2).png)
+![Dataset Visualization](https://raw.githubusercontent.com/HussamUmer/Vision4Healthcare/main/RetinaBloodVessel_AttentionUNet_Seg/Output/download%20(2).png)
 
 ---
 
@@ -60,7 +60,7 @@ cd Vision4Healthcare
 
 ## 📈 Training Progress
 
-![Training vs Validation Loss & Dice](https://raw.githubusercontent.com/HussamUmer/Vision4Healthcare/main/XRay_UNet_Segmentation/Outputs/download%20(2).png)
+![Training vs Validation Loss & Dice](https://raw.githubusercontent.com/HussamUmer/Vision4Healthcare/main/RetinaBloodVessel_AttentionUNet_Seg/Output/download%20(3).png)
 
 ---
 
@@ -79,7 +79,7 @@ After **100 epochs**, the model achieved **excellent segmentation performance**:
 ## 🖼️ Predicted vs Ground Truth
 
 Predicted vs Ground Truth by our trained model:
-![Predicted vs Ground Truth By Trained Model](https://raw.githubusercontent.com/HussamUmer/Vision4Healthcare/main/XRay_UNet_Segmentation/Outputs/Predicted.png)
+![Predicted vs Ground Truth By Trained Model](https://raw.githubusercontent.com/HussamUmer/Vision4Healthcare/main/RetinaBloodVessel_AttentionUNet_Seg/Output/download%20(4).png)
 
 ---
 
