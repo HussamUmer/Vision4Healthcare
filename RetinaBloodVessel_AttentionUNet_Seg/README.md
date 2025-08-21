@@ -26,12 +26,13 @@ This project uses a dataset containing **100 retinal fundus images** and their c
 
 **Structure:**  
 data/
-- ├── train/
-      -│ ├── images/ # 80 training images
-      -│ └── mask/ # 80 segmentation masks
-- └── test/
-      - ├── images/ # 20 test images
-      - └── mask/ # 20 segmentation masks
+├── train/
+│   ├── images/   # 80 training images
+│   └── mask/     # 80 segmentation masks
+└── test/
+    ├── images/   # 20 test images
+    └── mask/     # 20 segmentation masks
+
 
   
 - Images are `.png`
