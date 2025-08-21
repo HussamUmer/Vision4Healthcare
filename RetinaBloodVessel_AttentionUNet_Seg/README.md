@@ -25,13 +25,15 @@ Unlike the standard U-Net used in the X-ray segmentation project, this model int
 This project uses a dataset containing **100 retinal fundus images** and their corresponding **100 segmentation masks**.  
 
 **Structure:**  
-data/
-├── train/
-│   ├── images/   # 80 training images
-│   └── mask/     # 80 segmentation masks
-└── test/
-    ├── images/   # 20 test images
-    └── mask/     # 20 segmentation masks
+**Dataset Structure:**
+- **data/**
+  - **train/**
+    - **images/** → 80 training images
+    - **mask/** → 80 segmentation masks
+  - **test/**
+    - **images/** → 20 test images
+    - **mask/** → 20 segmentation masks
+
 
 
   
