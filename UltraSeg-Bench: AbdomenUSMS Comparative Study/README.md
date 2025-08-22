@@ -9,7 +9,7 @@
 ![PyTorch](https://img.shields.io/badge/PyTorch-2.x-red)
 ![Made with ❤️](https://img.shields.io/badge/Made%20with-%E2%9D%A4-ff69b4)
 
-> **One-line summary:** A small, carefully controlled **comparative study** of three segmentation baselines — **U-Net**, **Attention U-Net**, and **DeepLabV3+** — on the **AbdomenUSMSBench** (ultrasound) subset of **MedSegBench**. We focus on **reproducibility**, **fairness**, and **clear reporting** (val-selected best checkpoints, identical splits/metrics).
+>  A small, carefully controlled **comparative study** of three segmentation baselines — **U-Net**, **Attention U-Net**, and **DeepLabV3+** — on the **AbdomenUSMSBench** (ultrasound) subset of **MedSegBench**. We focus on **reproducibility**, **fairness**, and **clear reporting** (val-selected best checkpoints, identical splits/metrics).
 
 ---
 
