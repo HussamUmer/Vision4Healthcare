@@ -20,6 +20,25 @@ Unlike the standard U-Net used in the X-ray segmentation project, this model int
 
 ---
 
+## 📝 Why We Did This Project  
+This project focuses on **retinal blood vessel segmentation** using **Attention U-Net**, an advanced variant of U-Net that integrates **attention gates** for better feature extraction.  
+
+The aim is to support **early diagnosis of eye-related diseases** such as:  
+- 👁️ **Diabetic Retinopathy (DR)**  
+- 🧠 **Hypertension-induced Retinal Damage**  
+- 🩸 **Glaucoma and Vascular Abnormalities**  
+
+Key motivations include:  
+- 🔍 Identifying **tiny and thin blood vessels** that are often missed in manual inspections.  
+- 📈 Enhancing **segmentation accuracy** for small and complex vascular structures.  
+- 🧠 Demonstrating how **attention-based deep learning** improves results compared to traditional U-Net.  
+
+This project showcases how **AI in ophthalmology** can **assist doctors**, enable **faster screenings**, and potentially **prevent vision loss** by enabling **early detection**.
+
+
+---
+
+
 ## 📂 Dataset  
 
 This project uses a dataset containing **100 retinal fundus images** and their corresponding **100 segmentation masks**.  
