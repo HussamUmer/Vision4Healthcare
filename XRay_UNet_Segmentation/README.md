@@ -20,6 +20,22 @@ The model learns to segment regions of interest from X-ray scans by predicting b
 
 ---
 
+## 📝 Why We Did This Project  
+This project was developed to **automatically segment lung regions from chest X-ray scans** using **U-Net**, a powerful encoder-decoder architecture.  
+
+The main goals were:  
+- 🩺 Improve **diagnosis speed** for lung-related diseases.  
+- 📊 Provide **accurate binary masks** for abnormality localization.  
+- ⚡ Explore **deep learning-based image segmentation** techniques for healthcare applications.  
+
+By solving this problem, we demonstrate how **AI-driven segmentation models** can **reduce manual effort**, **standardize results**, and **enhance diagnostic accuracy** in clinical workflows.
+
+
+
+
+
+---
+
 ## 📂 Dataset  
 
 This project uses a dataset containing **704 X-ray images** and their corresponding **704 segmentation masks**.  
