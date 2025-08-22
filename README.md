@@ -35,6 +35,7 @@ Here, I explore algorithms that **identify, separate, and analyze specific regio
 #### 📂 Projects:
 - 🧩 [X-Ray Lung Segmentation using U-Net](https://github.com/HussamUmer/Vision4Healthcare/tree/main/XRay_UNet_Segmentation)
 - 👁️ [Retina Blood Vessel Segmentation using Attention U-Net](https://github.com/HussamUmer/Vision4Healthcare/tree/main/RetinaBloodVessel_AttentionUNet_Seg)
+- 📡 [UltraSeg-Bench: AbdomenUSMS Comparative Study](https://github.com/HussamUmer/Vision4Healthcare/tree/main/UltraSeg-Bench:%20AbdomenUSMS%20Comparative%20Study)
 
 Each segmentation project includes:
 - 🧠 Deep learning models for pixel-wise segmentation  
