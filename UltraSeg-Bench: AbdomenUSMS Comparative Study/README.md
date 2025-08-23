@@ -124,6 +124,10 @@ Click a badge at the top, or open:
 
 ## 🖼️ Visuals (qualitative)
 
+Below are representative cases from the test split. For each case we show the same image across models so we can compare boundaries, small structures, and failure modes at a glance. Overlays use a consistent class color palette; background is hidden.
+
+*These visuals are illustrative and complement the quantitative metrics; they highlight where models agree, where boundaries are uncertain, and which organs are most challenging.*
+
 ![Predict vs Truth — Example#1](https://github.com/HussamUmer/Vision4Healthcare/blob/main/UltraSeg-Bench%3A%20AbdomenUSMS%20Comparative%20Study/Output/PredictVsTruth/download%20(10).png?raw=1)
 
 ![Predict vs Truth — Example#2](https://github.com/HussamUmer/Vision4Healthcare/blob/main/UltraSeg-Bench%3A%20AbdomenUSMS%20Comparative%20Study/Output/PredictVsTruth/download%20(11).png?raw=1)
