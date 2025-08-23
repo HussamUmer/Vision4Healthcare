@@ -112,7 +112,12 @@ Click a badge at the top, or open:
 
 ## 🖼️ Visuals (qualitative)
 
-<img src="Output/PredictVsTruth/download (10).png" width="260">
+![Predict vs Truth — Example#1](https://github.com/HussamUmer/Vision4Healthcare/blob/main/UltraSeg-Bench%3A%20AbdomenUSMS%20Comparative%20Study/Output/PredictVsTruth/download%20(10).png?raw=1)
+
+![Predict vs Truth — Example#2](https://github.com/HussamUmer/Vision4Healthcare/blob/main/UltraSeg-Bench%3A%20AbdomenUSMS%20Comparative%20Study/Output/PredictVsTruth/download%20(11).png?raw=1)
+
+![Predict vs Truth — Example#3](https://github.com/HussamUmer/Vision4Healthcare/blob/main/UltraSeg-Bench%3A%20AbdomenUSMS%20Comparative%20Study/Output/PredictVsTruth/download%20(12).png?raw=1)
+
 
 ---
 
