@@ -175,11 +175,11 @@ Zenodo (data file used): abdomenus_256.npz — https://zenodo.org/records/133583
 
 ```
 
-Ronneberger et al., U-Net: Convolutional Networks for Biomedical Image Segmentation (MICCAI 2015).
+- Ronneberger et al., U-Net: Convolutional Networks for Biomedical Image Segmentation (MICCAI 2015).
 
-Oktay et al., Attention U-Net (ArXiv 2018).
+- Oktay et al., Attention U-Net (ArXiv 2018).
 
-Chen et al., Encoder-Decoder with Atrous Separable Convolution for Semantic Image Segmentation (DeepLabV3+) (ECCV 2018).
+- Chen et al., Encoder-Decoder with Atrous Separable Convolution for Semantic Image Segmentation (DeepLabV3+) (ECCV 2018).
 
 If you use this repository, please cite the dataset and the original method papers above.
 
