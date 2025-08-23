@@ -112,15 +112,7 @@ Click a badge at the top, or open:
 
 ## 🖼️ Visuals (qualitative)
 
-> Add a few overlays to illustrate success/failure modes:
->
-> ```
-> assets/qualitative/unet_*.png
-> assets/qualitative/attunet_*.png
-> assets/qualitative/deeplabv3p_*.png
-> ```
->
-> **Tip:** show (image, GT, prediction) triplets for the same cases across models.
+<img src="Output/PredictVsTruth/download (10).png" width="260">
 
 ---
 
