@@ -148,19 +148,19 @@ Below are representative cases from the test split. For each case we show the sa
 
 ## 🚧 Limitations & Next Steps
 
-Ultrasound segmentation remains challenging; small/rare organs and fuzzy boundaries depress Dice/IoU.
+- Ultrasound segmentation remains challenging; small/rare organs and fuzzy boundaries depress Dice/IoU.
 
-DeepLabV3+ shows strong capacity but needs stronger regularization.
+- DeepLabV3+ shows strong capacity but needs stronger regularization.
 
 Next steps:
 
-Try Tversky/Focal-Tversky mixes; class-balanced sampling.
+- Try Tversky/Focal-Tversky mixes; class-balanced sampling.
 
-512px training or 256→512 fine-tuning (VRAM permitting).
+- 512px training or 256→512 fine-tuning (VRAM permitting).
 
-Pretrained encoders for U-Net/Attention U-Net for a more apples-to-apples backbone comparison.
+- Pretrained encoders for U-Net/Attention U-Net for a more apples-to-apples backbone comparison.
 
-Per-class deep-dive and targeted augmentations (elastic, intensity, speckle).
+- Per-class deep-dive and targeted augmentations (elastic, intensity, speckle).
 
 ---
 
@@ -173,6 +173,8 @@ Zenodo (data file used): abdomenus_256.npz — https://zenodo.org/records/133583
 
 ### Architectures:
 
+```
+
 Ronneberger et al., U-Net: Convolutional Networks for Biomedical Image Segmentation (MICCAI 2015).
 
 Oktay et al., Attention U-Net (ArXiv 2018).
@@ -180,6 +182,8 @@ Oktay et al., Attention U-Net (ArXiv 2018).
 Chen et al., Encoder-Decoder with Atrous Separable Convolution for Semantic Image Segmentation (DeepLabV3+) (ECCV 2018).
 
 If you use this repository, please cite the dataset and the original method papers above.
+
+```
 
 ---
 
