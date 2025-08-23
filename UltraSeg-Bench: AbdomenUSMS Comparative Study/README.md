@@ -35,11 +35,15 @@ Ultrasound segmentation is **hard**: speckle noise, low contrast, and small/ambi
 > ⚠️ Please respect the dataset’s license and terms. This repo **does not** redistribute data; the notebooks **download directly** from the official Zenodo link at runtime.
 
 **Why it’s challenging:** ultrasound artifacts (speckle), low SNR, fuzzy boundaries, and **class imbalance** (background dominance, small/rare organs). These factors penalize models that lack strong context modeling or robust regularization.
-Here are two samples from the dataset:
+Here is a single sample from each set:
+
+>Train Sample:
 
 ![Predict vs Truth — Example#1](https://github.com/HussamUmer/Vision4Healthcare/blob/main/UltraSeg-Bench%3A%20AbdomenUSMS%20Comparative%20Study/Output/Dataset/download%20(2).png?raw=1)
 
 ![Predict vs Truth — Example#2](https://github.com/HussamUmer/Vision4Healthcare/blob/main/UltraSeg-Bench%3A%20AbdomenUSMS%20Comparative%20Study/Output/Dataset/download%20(3).png?raw=1)
+
+![Predict vs Truth — Example#2](https://github.com/HussamUmer/Vision4Healthcare/blob/main/UltraSeg-Bench%3A%20AbdomenUSMS%20Comparative%20Study/Output/Dataset/download%20(4).png?raw=1)
 
 ---
 
