@@ -41,8 +41,11 @@ Here is a single sample from each set:
 
 ![Predict vs Truth — Example#1](https://github.com/HussamUmer/Vision4Healthcare/blob/main/UltraSeg-Bench%3A%20AbdomenUSMS%20Comparative%20Study/Output/Dataset/download%20(2).png?raw=1)
 
+>Validation Sample:
 ![Predict vs Truth — Example#2](https://github.com/HussamUmer/Vision4Healthcare/blob/main/UltraSeg-Bench%3A%20AbdomenUSMS%20Comparative%20Study/Output/Dataset/download%20(3).png?raw=1)
 
+
+>Test Sample:
 ![Predict vs Truth — Example#2](https://github.com/HussamUmer/Vision4Healthcare/blob/main/UltraSeg-Bench%3A%20AbdomenUSMS%20Comparative%20Study/Output/Dataset/download%20(4).png?raw=1)
 
 ---
