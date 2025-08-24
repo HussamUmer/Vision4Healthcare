@@ -1,9 +1,5 @@
 # 📡 UltraSeg-Bench: AbdomenUSMS Comparative Study
 
-[![Open In Colab — U-Net](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/<YOUR_GH_USER>/ultraseg-bench/blob/main/notebooks/unet_abdomenus.ipynb)
-[![Open In Colab — Attention U-Net](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/<YOUR_GH_USER>/ultraseg-bench/blob/main/notebooks/attunet_abdomenus.ipynb)
-[![Open In Colab — DeepLabV3+](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/<YOUR_GH_USER>/ultraseg-bench/blob/main/notebooks/deeplabv3p_abdomenus.ipynb)
-
 ![License](https://img.shields.io/badge/License-MIT-green.svg)
 ![Python](https://img.shields.io/badge/Python-%E2%89%A53.9-blue)
 ![PyTorch](https://img.shields.io/badge/PyTorch-2.x-red)
@@ -74,13 +70,16 @@ All three share the **same steps**:
 
 ## 🚀 Quick start (Colab)
 
-Click a badge at the top, or open:
+Click a badge to open notebooks in colab:
 
-- U-Net: `notebooks/unet_abdomenus.ipynb`  
-- Attention U-Net: `notebooks/attunet_abdomenus.ipynb`  
-- DeepLabV3+: `notebooks/deeplabv3p_abdomenus.ipynb`
+- U-Net:
+[![Open In Colab — AbdomenUSMSBench Attention U-Net](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/HussamUmer/Vision4Healthcare/blob/main/UltraSeg-Bench%3A%20AbdomenUSMS%20Comparative%20Study/Notebooks/AbdomenUSMSBench_AttentionUNet.ipynb)
+- Attention U-Net: 
+[![Open In Colab — AbdomenUSMSBench U-Net](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/HussamUmer/Vision4Healthcare/blob/main/UltraSeg-Bench%3A%20AbdomenUSMS%20Comparative%20Study/Notebooks/AbdomenUSMSBench_UNet.ipynb)
+- DeepLabV3+:
+[![Open In Colab — AbdomenUSMSBench DeepLabV3](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/HussamUmer/Vision4Healthcare/blob/main/UltraSeg-Bench%3A%20AbdomenUSMS%20Comparative%20Study/Notebooks/AbdomenUSMSBench_DeepLabV3.ipynb)
 
-> Replace `<YOUR_GH_USER>` in the badge links with your GitHub username after you push.
+
 
 ---
 
