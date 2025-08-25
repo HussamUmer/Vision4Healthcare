@@ -113,6 +113,11 @@ Click a badge to open notebooks in colab:
 
 **Interpretation**: **Attention U-Net** has the smallest gaps across Dice and IoU, indicating the strongest generalization among the three under my current setup.
 
+<p align="center">
+  <img src="https://github.com/HussamUmer/Vision4Healthcare/blob/main/UltraSeg-Bench%3A%20AbdomenUSMS%20Comparative%20Study/Output/OverallComparisonGraph/newplot%20(1).png?raw=1" alt="Generalization Gaps across models (mDice & mIoU)" width="880">
+  <br><em>Figure: Generalization gaps (Train→Test and Val→Test) for mDice and mIoU — smaller is better; Attention U-Net shows the tightest gaps.</em>
+</p>
+
 ---
 
 ### 3) Efficiency
@@ -124,6 +129,12 @@ Click a badge to open notebooks in colab:
 | DeepLabV3+ | 46 | 26 |
 
 **Interpretation:** With early stopping/scheduling, **Attention U-Net** converges efficiently; **DeepLabV3+** reaches best quickly but generalizes slightly worse than AttU-Net on test.
+
+<p align="center">
+  <img src="https://github.com/HussamUmer/Vision4Healthcare/blob/main/UltraSeg-Bench%3A%20AbdomenUSMS%20Comparative%20Study/Output/OverallComparisonGraph/newplot%20(2).png?raw=1" alt="Training efficiency — total epochs and best-epoch per model" width="720">
+  <br><em>Figure: Training efficiency across models — total epochs run and the epoch at which the best validation mDice was achieved (lower is better).</em>
+</p>
+
 
 ---
 
