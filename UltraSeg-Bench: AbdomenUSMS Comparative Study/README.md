@@ -45,7 +45,7 @@ Here is a single sample from each set:
 ![Predict vs Truth — Example#2](https://github.com/HussamUmer/Vision4Healthcare/blob/main/UltraSeg-Bench%3A%20AbdomenUSMS%20Comparative%20Study/Output/Dataset/download%20(4).png?raw=1)
 
 <p align="center">
-<br><emp>Figure: Representative samples from the AbdomenUS dataset across splits—Train, Validation, and Test. Each panel shows the ultrasound image with ground-truth overlay , using a consistent class color palette (background hidden) to illustrate appearance, annotation quality, and split similarity.</emp>
+<br><em>Figure: Representative samples from the AbdomenUS dataset across splits—Train, Validation, and Test. Each panel shows the ultrasound image with ground-truth overlay , using a consistent class color palette (background hidden) to illustrate appearance, annotation quality, and split similarity.</em>
 </p>
 
 ---
