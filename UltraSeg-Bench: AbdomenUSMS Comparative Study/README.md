@@ -136,6 +136,37 @@ Below are representative cases from the test split. For each case we show the sa
 
 ---
 
+## 📈 Epoch-wise Metric Comparisons (Train & Val)
+
+### mDice per epoch (higher is better)
+| U-Net | Attention U-Net | DeepLabV3+ |
+|---|---|---|
+| <img src="https://github.com/HussamUmer/Vision4Healthcare/blob/main/UltraSeg-Bench%3A%20AbdomenUSMS%20Comparative%20Study/Output/TrainValGraphs/UNet/download%20(7).png?raw=1" width="320"> | <img src="https://github.com/HussamUmer/Vision4Healthcare/blob/main/UltraSeg-Bench%3A%20AbdomenUSMS%20Comparative%20Study/Output/TrainingCurves/mdice_attunet.png?raw=1" width="320"> | <img src="https://github.com/HussamUmer/Vision4Healthcare/blob/main/UltraSeg-Bench%3A%20AbdomenUSMS%20Comparative%20Study/Output/TrainingCurves/mdice_deeplabv3p.png?raw=1" width="320"> |
+
+*Shows segmentation quality across training; train–val gaps hint at under/overfitting.*
+
+---
+
+### mIoU per epoch (higher is better)
+| U-Net | Attention U-Net | DeepLabV3+ |
+|---|---|---|
+| <img src="https://github.com/HussamUmer/Vision4Healthcare/blob/main/UltraSeg-Bench%3A%20AbdomenUSMS%20Comparative%20Study/Output/TrainingCurves/miou_unet.png?raw=1" width="320"> | <img src="https://github.com/HussamUmer/Vision4Healthcare/blob/main/UltraSeg-Bench%3A%20AbdomenUSMS%20Comparative%20Study/Output/TrainingCurves/miou_attunet.png?raw=1" width="320"> | <img src="https://github.com/HussamUmer/Vision4Healthcare/blob/main/UltraSeg-Bench%3A%20AbdomenUSMS%20Comparative%20Study/Output/TrainingCurves/miou_deeplabv3p.png?raw=1" width="320"> |
+
+*mIoU complements mDice; consistent trends reinforce conclusions about stability and generalization.*
+
+---
+
+### Loss per epoch (lower is better)
+| U-Net | Attention U-Net | DeepLabV3+ |
+|---|---|---|
+| <img src="https://github.com/HussamUmer/Vision4Healthcare/blob/main/UltraSeg-Bench%3A%20AbdomenUSMS%20Comparative%20Study/Output/TrainingCurves/loss_unet.png?raw=1" width="320"> | <img src="https://github.com/HussamUmer/Vision4Healthcare/blob/main/UltraSeg-Bench%3A%20AbdomenUSMS%20Comparative%20Study/Output/TrainingCurves/loss_attunet.png?raw=1" width="320"> | <img src="https://github.com/HussamUmer/Vision4Healthcare/blob/main/UltraSeg-Bench%3A%20AbdomenUSMS%20Comparative%20Study/Output/TrainingCurves/loss_deeplabv3p.png?raw=1" width="320"> |
+
+*Loss curves reflect optimization behavior; widening train–val gaps indicate overfitting, smooth plateaus indicate convergence.*
+
+
+
+---
+
 ## 🔁 Reproducibility
 
 - Fixed seeds for `random`, `numpy`, `torch` (+ CUDA)  
