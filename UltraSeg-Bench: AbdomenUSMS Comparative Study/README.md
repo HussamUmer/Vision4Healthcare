@@ -105,7 +105,7 @@ Click a badge to open notebooks in colab:
 | **Attention U-Net** | 0.6705 → 0.5674 = **0.1031** | 0.6227 → 0.5674 = **0.0553** | 0.5868 → 0.4906 = **0.0962** | 0.5398 → 0.4906 = **0.0492** |
 | DeepLabV3+ | 0.8531 → 0.5565 = **0.2966** | 0.6934 → 0.5565 = **0.1369** | 0.8102 → 0.4821 = **0.3281** | 0.6186 → 0.4821 = **0.1365** |
 
-**Interpretation **: **Attention U-Net** has the smallest gaps across Dice and IoU, indicating the strongest generalization among the three under your current setup.
+**Interpretation**: **Attention U-Net** has the smallest gaps across Dice and IoU, indicating the strongest generalization among the three under your current setup.
 
 ---
 
