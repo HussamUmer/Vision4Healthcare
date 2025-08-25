@@ -150,6 +150,11 @@ Below are representative cases from the test split. For each case we show the sa
 
 ![Predict vs Truth — Example#3](https://github.com/HussamUmer/Vision4Healthcare/blob/main/UltraSeg-Bench%3A%20AbdomenUSMS%20Comparative%20Study/Output/PredictVsTruth/download%20(12).png?raw=1)
 
+<p align="center">
+  <br><em>Figure: Representative qualitative comparisons on the AbdomenUS test set. Each panel shows the same case across models—Input, Ground Truth, U-Net, Attention U-Net, and DeepLabV3+—with a consistent class color palette (background hidden) to highlight boundary quality, small-structure recovery, and typical failure modes.</em>
+</p>
+
+
 
 ---
 
