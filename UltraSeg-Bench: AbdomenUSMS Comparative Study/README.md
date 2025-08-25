@@ -101,11 +101,11 @@ Click a badge to open notebooks in colab:
 
 | Model | Train→Test ΔDice | Val→Test ΔDice | Train→Test ΔIoU | Val→Test ΔIoU |
 |---|---:|---:|---:|---:|
-| U-Net | 0.6513 → 0.4650 = **0.1863** | 0.5919 → 0.4650 = **0.1269** | 0.5649 → 0.3855 = **0.1794** | 0.5051 → 0.3855 = **0.1196** |
+| U-Net | 0.6927 → 0.4868 = **0.2059** | 0.6059 → 0.4868 = **0.1191** | 0.6087 → 0.4056 = **0.2031** | 0.5075 → 0.4056 = **0.1019** |
 | **Attention U-Net** | 0.6705 → 0.5674 = **0.1031** | 0.6227 → 0.5674 = **0.0553** | 0.5868 → 0.4906 = **0.0962** | 0.5398 → 0.4906 = **0.0492** |
-| DeepLabV3+ | 0.8850 → 0.5540 = **0.3310** | 0.6782 → 0.5540 = **0.1242** | 0.8581 → 0.4826 = **0.3755** | 0.6019 → 0.4826 = **0.1193** |
+| DeepLabV3+ | 0.8531 → 0.5565 = **0.2966** | 0.6934 → 0.5565 = **0.1369** | 0.8102 → 0.4821 = **0.3281** | 0.6186 → 0.4821 = **0.1365** |
 
-**Interpretation:** **Attention U-Net** overfits the least (smallest gaps), **DeepLabV3+** overfits the most (despite high train/val scores).
+**Interpretation **: **Attention U-Net** has the smallest gaps across Dice and IoU, indicating the strongest generalization among the three under your current setup.
 
 ---
 
