@@ -95,6 +95,12 @@ Click a badge to open notebooks in colab:
 
 **Reading the table:** We select the **best checkpoint by validation mDice** for each model, then compute **test** metrics with the same evaluation settings. **Attention U-Net** generalizes best on this dataset (highest **test mDice/mIoU**), while **DeepLabV3+** shows stronger **val** performance but a larger generalization gap. **U-Net** (baseline) trails both.
 
+<p align="center">
+  <img src="https://github.com/HussamUmer/Vision4Healthcare/blob/main/UltraSeg-Bench%3A%20AbdomenUSMS%20Comparative%20Study/Output/OverallComparisonGraph/newplot.png?raw=1" alt="Best-Checkpoint Summary — Val vs Test metrics across models" width="880">
+  <br><em>Figure: Validation-selected best checkpoints vs. held-out test performance (mDice, mIoU, and loss) for U-Net, Attention U-Net, and DeepLabV3+.</em>
+</p>
+
+
 ---
 
 ### 2) Generalization Gaps (smaller is better)
