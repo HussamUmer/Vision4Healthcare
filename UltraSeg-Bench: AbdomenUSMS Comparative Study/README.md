@@ -87,9 +87,9 @@ Click a badge to open notebooks in colab:
 
 ### 1) Best-Checkpoint Summary (Validation-selected → Tested on held-out test set)
 
-| Model | Val mDice | Val mIoU | Test mDice | Test mIoU | Test Loss |
-|---|---:|---:|---:|---:|---:|
-| U-Net | 0.5919 | 0.5051 | 0.4650 | 0.3855 | 0.8516 |
+| Model | Val mDice | Val mIoU | Val Loss | Test mDice | Test mIoU | Test Loss |
+|---|---:|---:|---:|---:|---:| ---:|
+| U-Net | 0.6059 | 0.5075 | 0.6035 |0.4868 | 0.4056 | 0.7915 |
 | **Attention U-Net** | 0.6227 | 0.5398 | **0.5674** | **0.4906** | 0.8844 |
 | DeepLabV3+ | **0.6782** | **0.6019** | 0.5540 | 0.4826 | 0.8677 |
 
