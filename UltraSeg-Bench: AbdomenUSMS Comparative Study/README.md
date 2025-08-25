@@ -90,8 +90,8 @@ Click a badge to open notebooks in colab:
 | Model | Val mDice | Val mIoU | Val Loss | Test mDice | Test mIoU | Test Loss |
 |---|---:|---:|---:|---:|---:| ---:|
 | U-Net | 0.6059 | 0.5075 | 0.6035 |0.4868 | 0.4056 | 0.7915 |
-| **Attention U-Net** | 0.6227 | 0.5398 | **0.5674** | **0.4906** | 0.8844 |
-| DeepLabV3+ | **0.6782** | **0.6019** | 0.5540 | 0.4826 | 0.8677 |
+| DeepLabV3+ | 0.6934 | 0.6186 | 0.5665 | 0.5565 | 0.4821 | 0.8345|
+| Attention U-Net | 0.6227 | 0.5398 | 0.7008 | 0.5674 | 0.4906 | 0.8844|
 
 **Reading the table:** We select the **best checkpoint by validation mDice** for each model, then compute **test** metrics with the same evaluation settings. **Attention U-Net** generalizes best on this dataset (highest **test mDice/mIoU**), while **DeepLabV3+** shows stronger **val** performance but a larger generalization gap. **U-Net** (baseline) trails both.
 
