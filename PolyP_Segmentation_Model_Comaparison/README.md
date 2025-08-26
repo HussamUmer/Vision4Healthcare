@@ -58,6 +58,6 @@ We trained **two models under the same experimental setup** for fairness:
 
 ### 1. Clone the repo
 ```bash
-git clone https://github.com/yourusername/your-repo.git
-cd your-repo
+git clone https://github.com/HussamUmer/Vision4Healthcare.git
+cd Vision4Healthcare
 
