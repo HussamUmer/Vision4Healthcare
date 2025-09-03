@@ -10,6 +10,19 @@ The goal is to evaluate how traditional convolutional models and transformer-aug
 
 ---
 
+## ❓ Why This Study?
+
+Polyp detection and segmentation are critical for **early diagnosis of colorectal cancer**, one of the leading causes of cancer-related deaths worldwide.  
+Accurate polyp segmentation can assist clinicians during colonoscopy by highlighting suspicious regions in real-time, reducing the risk of missed polyps.  
+
+This study was carried out to:  
+- Compare a **classical CNN-based approach (U-Net)** with a **hybrid Transformer-based approach (TransUNet)**.  
+- Understand how **different architectures generalize** on a small but challenging medical dataset (Kvasir-SEG).  
+- Provide an open, reproducible benchmark to guide future research in **medical image segmentation**.
+
+
+---
+
 ## 📂 Dataset
 
 We use the **Kvasir-SEG** dataset:  
