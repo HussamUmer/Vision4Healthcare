@@ -121,15 +121,15 @@ The following graph illustrates the **training duration and best epoch selection
 
 ---
 
-### 🔹 Qualitative Comparison
+### 📸 Qualitative Comparison
 
 Below are sample predictions showing **Image → Ground Truth → U-Net Prediction → TransUNet Prediction**:
 
-| Image | Ground Truth | U-Net Prediction | TransUNet Prediction |
-|-------|--------------|------------------|----------------------|
-| ![](assets/sample_img.png) | ![](assets/sample_gt.png) | ![](assets/sample_unet.png) | ![](assets/sample_transunet.png) |
+| U-Net | TransUNet |
+|---|---|
+| <img src="https://github.com/HussamUmer/Vision4Healthcare/blob/main/PolyP_Segmentation_Model_Comaparison/Output/PredictedVsTruth/unet.png?raw=1" width="450"> | <img src="https://github.com/HussamUmer/Vision4Healthcare/blob/main/PolyP_Segmentation_Model_Comaparison/Output/PredictedVsTruth/transunet.png?raw=1" width="450"> |
 
-📸 More visual comparisons: [Qualitative Results](assets/qualitative_comparison.png)
+*Side-by-side comparison of predicted masks vs. ground truth — U-Net vs. TransUNet.*
 
 ---
 
