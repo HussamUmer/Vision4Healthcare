@@ -67,7 +67,9 @@ We compared **U-Net** and **TransUNet** on the Kvasir-SEG dataset under the same
 | **TransUNet**  | 0.1997       | 0.7580       | 0.6470      | –          | 0.1959     | 0.7721     | 0.6583    | 10 / 100   |
 
 📈 **Graph:**  
-- [TransUNet Training Curves](Output/Metrics.png)  
+- The following graph shows the **training and validation loss, Dice, and IoU** for both **U-Net** and **TransUNet** across epochs:
+
+![Metrics Graph](https://github.com/HussamUmer/Vision4Healthcare/blob/main/PolyP_Segmentation_Model_Comaparison/Output/Comparative/Metrics.png)
 
 ---
 
