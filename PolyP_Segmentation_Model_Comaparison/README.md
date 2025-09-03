@@ -66,9 +66,8 @@ We compared **U-Net** and **TransUNet** on the Kvasir-SEG dataset under the same
 | **U-Net**      | 0.1645       | 0.8934       | 0.8227      | 0.6291     | 0.2544     | 0.8393     | 0.7574    | 77 / 100   |
 | **TransUNet**  | 0.1997       | 0.7580       | 0.6470      | –          | 0.1959     | 0.7721     | 0.6583    | 10 / 100   |
 
-📈 **Graphs:**  
-- [U-Net Training Curves](assets/unet_training_curves.png)  
-- [TransUNet Training Curves](assets/transunet_training_curves.png)  
+📈 **Graph:**  
+- [TransUNet Training Curves](Output/Metrics.png)  
 
 ---
 
