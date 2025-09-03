@@ -20,7 +20,16 @@ We use the **Kvasir-SEG** dataset:
 **Citation (please cite if you use this dataset):**
 > Debesh Jha, Pia H. Smedsrud, Michael A. Riegler, Dag Johansen, Thomas de Lange, Pål Halvorsen, Håvard D. Johansen.  
 > *Kvasir-SEG: A Segmented Polyp Dataset*.  
-> In International Conference on Multimedia Modeling (MMM), 2020.  
+> In International Conference on Multimedia Modeling (MMM), 2020.
+
+
+#### 🗂️ Dataset Sample
+
+Below is an example from the **Kvasir-SEG dataset**, showing colonoscopy images alongside their corresponding ground-truth polyp masks:
+
+<img src="https://github.com/HussamUmer/Vision4Healthcare/blob/main/PolyP_Segmentation_Model_Comaparison/Output/Dataset/download%20(3).png?raw=1" width="600">
+
+*Kvasir-SEG provides 1,000 annotated colonoscopy images for polyp segmentation.*
 
 ---
 
