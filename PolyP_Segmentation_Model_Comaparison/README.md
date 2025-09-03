@@ -91,6 +91,36 @@ The following graph illustrates the **training duration and best epoch selection
 
 ---
 
+## 📈 Epoch-wise Metric Comparisons (Train & Val)
+
+### mDice per epoch (higher is better)  
+| U-Net | TransUNet |
+|---|---|
+| <img src="https://github.com/HussamUmer/Vision4Healthcare/blob/main/PolyP_Segmentation_Model_Comaparison/Output/UNet/Dice.png?raw=1" width="400"> | <img src="https://github.com/HussamUmer/Vision4Healthcare/blob/main/PolyP_Segmentation_Model_Comaparison/Output/TransUNet/Dice.png?raw=1" width="400"> |
+
+*Dice reflects segmentation overlap quality; higher values indicate better mask alignment.*
+
+---
+
+### mIoU per epoch (higher is better)  
+| U-Net | TransUNet |
+|---|---|
+| <img src="https://github.com/HussamUmer/Vision4Healthcare/blob/main/PolyP_Segmentation_Model_Comaparison/Output/UNet/IOU.png?raw=1" width="400"> | <img src="https://github.com/HussamUmer/Vision4Healthcare/blob/main/PolyP_Segmentation_Model_Comaparison/Output/TransUNet/IOU.png?raw=1" width="400"> |
+
+*IoU complements Dice; trends across epochs highlight model stability and generalization.*
+
+---
+
+### Loss per epoch (lower is better)  
+| U-Net | TransUNet |
+|---|---|
+| <img src="https://github.com/HussamUmer/Vision4Healthcare/blob/main/PolyP_Segmentation_Model_Comaparison/Output/UNet/loss.png?raw=1" width="400"> | <img src="https://github.com/HussamUmer/Vision4Healthcare/blob/main/PolyP_Segmentation_Model_Comaparison/Output/TransUNet/loss.png?raw=1" width="400"> |
+
+*Loss curves reflect optimization behavior; stable convergence indicates reliable learning.*
+
+
+---
+
 ### 🔹 Qualitative Comparison
 
 Below are sample predictions showing **Image → Ground Truth → U-Net Prediction → TransUNet Prediction**:
