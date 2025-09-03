@@ -84,9 +84,10 @@ The following graph illustrates the **training duration and best epoch selection
 | **U-Net**      | 0.2825      | 0.8256      | 0.7338     |
 | **TransUNet**  | 0.1351      | 0.8200      | 0.7342     |
 
-📈 **Graphs:**  
-- [U-Net Test Metrics](assets/unet_test_metrics.png)  
-- [TransUNet Test Metrics](assets/transunet_test_metrics.png)  
+📈 **Graph:**  
+- The following graph shows the **comparison of test metrics (Loss, Dice, IoU)** between **U-Net** and **TransUNet**:
+
+![Test Metrics](https://github.com/HussamUmer/Vision4Healthcare/blob/main/PolyP_Segmentation_Model_Comaparison/Output/Test/newplot.png)
 
 ---
 
