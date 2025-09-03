@@ -21,6 +21,16 @@ We use the **Kvasir-SEG** dataset:
 > Debesh Jha, Pia H. Smedsrud, Michael A. Riegler, Dag Johansen, Thomas de Lange, Pål Halvorsen, Håvard D. Johansen.  
 > *Kvasir-SEG: A Segmented Polyp Dataset*.  
 > In International Conference on Multimedia Modeling (MMM), 2020.
+>
+#### 📂 Dataset Split
+
+| Split | Number of Images |
+|-------|------------------|
+| **Train** | 699 |
+| **Validation** | 151 |
+| **Test** | 150 |
+| **Total** | 1000 |
+
 
 
 #### 🗂️ Dataset Sample
