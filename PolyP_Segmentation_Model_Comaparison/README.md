@@ -71,6 +71,10 @@ We compared **U-Net** and **TransUNet** on the Kvasir-SEG dataset under the same
 
 ![Metrics Graph](https://github.com/HussamUmer/Vision4Healthcare/blob/main/PolyP_Segmentation_Model_Comaparison/Output/Comparative/Metrics.png)
 
+The following graph illustrates the **training duration and best epoch selection** for both models (U-Net and TransUNet):
+
+![Epochs Graph](https://github.com/HussamUmer/Vision4Healthcare/blob/main/PolyP_Segmentation_Model_Comaparison/Output/Comparative/Epochs.png)
+
 ---
 
 ### 🔹 Test Performance
