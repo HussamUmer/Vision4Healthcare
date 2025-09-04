@@ -1,6 +1,10 @@
 # 🩺 Polyp Segmentation with U-Net and TransUNet on Kvasir-SEG
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/yourusername/your-repo/blob/main/notebook.ipynb)
+![License](https://img.shields.io/badge/License-MIT-green.svg)
+![Python](https://img.shields.io/badge/Python-%E2%89%A53.9-blue)
+![PyTorch](https://img.shields.io/badge/PyTorch-2.x-red)
+![Made with ❤️](https://img.shields.io/badge/Made%20with-%E2%9D%A4-ff69b4)
 
 ## 📌 Project Overview
 
