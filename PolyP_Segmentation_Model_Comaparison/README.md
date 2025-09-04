@@ -173,8 +173,16 @@ Below are sample predictions showing **Image → Ground Truth → U-Net Predicti
 
 ---
 
+## ▶️ Run the Notebooks in Google Colab
 
 
+### Direct “Open in Colab” badges
+
+<!-- U-Net notebook -->
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/HussamUmer/Vision4Healthcare/blob/main/PolyP_Segmentation_Model_Comaparison/Notebooks/Kvasir_SEG_UNet.ipynb)
+
+<!-- TransUNet notebook -->
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/HussamUmer/Vision4Healthcare/blob/main/PolyP_Segmentation_Model_Comaparison/Notebooks/Kvasir_SEG_TransUNet.ipynb)
 
 
 ---
