@@ -192,8 +192,45 @@ Below are sample predictions showing **Image → Ground Truth → U-Net Predicti
 ---
 ## 🚀 Running the Project
 
-### 1. Clone the repo
+###  Clone the repo
 ```bash
 git clone https://github.com/HussamUmer/Vision4Healthcare.git
 cd Vision4Healthcare
+```
+---
+
+## ⚠️ Issues Faced
+
+During this project, we encountered several challenges:
+
+- **Small dataset size** (Kvasir-SEG has only 1,000 images), which increases the risk of overfitting.  
+- **DataLoader crashes / worker killed errors** due to limited system memory when using heavy augmentations.  
+- **Training instability** in some runs, especially for TransUNet, which required careful learning rate tuning and early stopping.  
+- **Checkpoint compatibility issues** with PyTorch 2.6 (changes in `torch.load` defaults).  
+- **Longer training times** for TransUNet compared to U-Net, even on relatively small input sizes.  
+
+---
+
+## 🔮 Future Work
+
+There are several directions to extend this study:
+
+- **Add more baselines** such as U-Net++, HarDNet-MSEG, or lightweight real-time models for edge deployment.  
+- **Cross-dataset validation** (e.g., test generalization on CVC-ClinicDB or ETIS-Larib).  
+- **Model compression**: pruning, quantization, or knowledge distillation to make models deployment-ready for clinical devices.  
+- **Boundary-aware losses** (e.g., Boundary F1, Tversky, or Hausdorff loss) to better capture small/tiny polyps.  
+- **Semi-supervised or self-supervised learning** to leverage unlabeled colonoscopy data for better feature learning.  
+
+---
+
+## 🏁 Final Words
+
+This project demonstrated a **comparative study between U-Net and TransUNet** on the **Kvasir-SEG dataset** for polyp segmentation.  
+
+- **U-Net** proved to be a strong, lightweight baseline, achieving high Dice scores with fewer parameters.  
+- **TransUNet**, while heavier, showed competitive performance and converged quickly in fewer epochs.  
+- Both models performed similarly on the test set, highlighting that classical CNNs remain competitive, while Transformer-based models offer promising alternatives.  
+
+🔗 The full code, training logs, evaluation results, and qualitative comparisons are available in this repository to encourage **reproducibility** and **future exploration**.
+
 
