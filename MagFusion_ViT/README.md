@@ -64,8 +64,6 @@ We report **macro-F1**, **balanced accuracy**, **per-class F1**, **confusion mat
 
 ## 🚀 **Open in Colab**
 
-> Replace `<USER>` and `<REPO>` with your GitHub path. Each notebook mounts Google Drive and asks you to set `DATA_ROOT`, `DATA_ROOT_100X`, `DATA_ROOT_400X`, `DATA_ROOT_MIXED`.
-
 ### 🤖 **DeiT-Small runs**
 | Run | Notebook | Notes |
 |---|---|---|
@@ -101,9 +99,6 @@ We report **macro-F1**, **balanced accuracy**, **per-class F1**, **confusion mat
 
 ## 📊 **Results Summary — MagFusion-ViT (DeiT-Small & Swin-Tiny across 100× / 400× / Mixed)**
 
-# 📊 
-
-Below are **ready-to-paste README tables** built from the numbers you provided.  
 Quick takeaways:
 - ✅ **In-domain** (train=test) is near-perfect on **400×** for both models (Macro-F1 ≈ **0.992–0.996**).
 - 🧪 **Cross-domain** drops are **asymmetric**: training on **400× → testing on 100×** drops more than the reverse.
