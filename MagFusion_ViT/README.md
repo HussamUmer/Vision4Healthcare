@@ -99,39 +99,105 @@ We report **macro-F1**, **balanced accuracy**, **per-class F1**, **confusion mat
 
 ---
 
-## 📊 **Results (Templates)**
+## 📊 **Results Summary — MagFusion-ViT (DeiT-Small & Swin-Tiny across 100× / 400× / Mixed)**
 
-> Replace placeholders with your exported numbers (JSON/CSV) and insert your PNG plots.
+# 📊 
 
-### 🧷 **Primary (in-domain) — Macro-F1 (↑)**
-| Model | Train=Test: 100× | Train=Test: 400× | Train=Test: Mixed |
+Below are **ready-to-paste README tables** built from the numbers you provided.  
+Quick takeaways:
+- ✅ **In-domain** (train=test) is near-perfect on **400×** for both models (Macro-F1 ≈ **0.992–0.996**).
+- 🧪 **Cross-domain** drops are **asymmetric**: training on **400× → testing on 100×** drops more than the reverse.
+- 🧩 **Mixed training** improves **robustness**. **Swin-Tiny (Mixed)** generalizes best overall (Macro-F1 ≈ **0.955–0.963** on 100×/400×/Mixed).
+
+---
+
+## 🧷 Primary (In-Domain) Performance — Headline Metrics
+*Each row reports the primary evaluation where **Train = Test** magnification. Includes efficiency stats to aid practical comparisons.*
+
+| Model | Train=Test Setup | Macro-F1 (↑) | Accuracy (↑) | Balanced Acc (↑) | Latency (ms/img) (↓) | Throughput (img/s) (↑) | Peak GPU (MB) |
+|---|---|---:|---:|---:|---:|---:|---:|
+| **DeiT-Small** | 100× | **0.979** | 0.979 | 0.979 | 166.581 | 6.003 | 528.254 |
+| **DeiT-Small** | 400× | **0.996** | 0.996 | 0.996 | 704.081 | 1.420 | 528.254 |
+| **DeiT-Small** | Mixed | **0.920** | 0.921 | 0.921 | 477.284 | 2.095 | 528.004 |
+| **Swin-Tiny** | 100× | **0.958** | 0.958 | 0.958 | 303.168 | 3.298 | 1302.659 |
+| **Swin-Tiny** | 400× | **0.992** | 0.992 | 0.992 | 269.120 | 3.716 | 1302.659 |
+| **Swin-Tiny** | Mixed | **0.963** | 0.963 | 0.963 | 224.129 | 4.462 | 1302.659 |
+
+**What it shows:** how well each model performs on the distribution it was trained on, plus runtime/memory.  
+**Observation:** Both models excel on **400×** in-domain; **Swin-Tiny (Mixed)** reaches strong, balanced in-domain performance with the **best latency** among Swin runs.
+
+---
+
+## 🔀 Cross-Domain Robustness — Macro-F1 (↑)
+*Rows are the **training** setup; columns are the **testing** setup. Higher is better. These matrices reveal how well each trained model generalizes across magnifications.*
+
+### DeiT-Small
+| Train \ Test | 100× | 400× | Mixed |
 |---|---:|---:|---:|
-| **DeiT-Small** | `0.XXX` | `0.XXX` | `0.XXX` |
-| **Swin-Tiny**  | `0.XXX` | `0.XXX` | `0.XXX` |
+| **100×** | **0.979** | 0.518 | 0.769 |
+| **400×** | 0.405 | **0.996** | 0.734 |
+| **Mixed** | 0.921 | 0.933 | **0.920** |
 
-### 🔀 **Robustness (cross-domain) — Macro-F1 (↑)**
-| Train \ Test | **100×** | **400×** | **Mixed** |
+**Reads like:**  
+- Training on **400× → 100×** suffers (0.405), more than **100× → 400×** (0.518).  
+- **Mixed** training is consistently high (≈0.92–0.93) across all tests.
+
+### Swin-Tiny
+| Train \ Test | 100× | 400× | Mixed |
 |---|---:|---:|---:|
-| **DeiT-100×** | **—** | `0.XXX` | `0.XXX` |
-| **DeiT-400×** | `0.XXX` | **—** | `0.XXX` |
-| **DeiT-Mixed** | `0.XXX` | `0.XXX` | **—** |
-| **Swin-100×** | **—** | `0.XXX` | `0.XXX` |
-| **Swin-400×** | `0.XXX` | **—** | `0.XXX` |
-| **Swin-Mixed** | `0.XXX` | `0.XXX` | **—** |
+| **100×** | **0.958** | 0.337 | 0.681 |
+| **400×** | 0.245 | **0.992** | 0.685 |
+| **Mixed** | 0.955 | 0.963 | **0.963** |
 
-### 🧩 **Per-class F1 — Example (Mixed test)**
-| Class | DeiT-Small | Swin-Tiny |
-|---|---:|---:|
-| Adenosis | `0.XXX` | `0.XXX` |
-| Ductal carcinoma | `0.XXX` | `0.XXX` |
-| Fibroadenoma | `0.XXX` | `0.XXX` |
-| Lobular carcinoma | `0.XXX` | `0.XXX` |
-| Mucinous carcinoma | `0.XXX` | `0.XXX` |
-| Papillary carcinoma | `0.XXX` | `0.XXX` |
-| Phyllodes tumor | `0.XXX` | `0.XXX` |
-| Tubular adenoma | `0.XXX` | `0.XXX` |
+**Reads like:**  
+- **400× → 100×** is harsh (0.245), harsher than **100× → 400×** (0.337).  
+- **Mixed** training for Swin is excellent and symmetric (≈0.955–0.963 across all tests), indicating **best robustness** overall.
 
-> 📎 Include confusion matrices (`cm_*.png`), reliability diagrams (optional), and latency tables exported by notebooks.
+---
+
+## ⏱️ Efficiency Snapshot — In-Domain Only
+*Compare speed/memory where each model is evaluated on its training distribution.*
+
+| Model | Train=Test | Latency (ms/img) (↓) | Throughput (img/s) (↑) | Peak GPU (MB) |
+|---|---|---:|---:|---:|
+| **DeiT-Small** | 100× | **166.581** | **6.003** | **528.254** |
+| **DeiT-Small** | 400× | 704.081 | 1.420 | 528.254 |
+| **DeiT-Small** | Mixed | 477.284 | 2.095 | 528.004 |
+| **Swin-Tiny** | 100× | 303.168 | 3.298 | 1302.659 |
+| **Swin-Tiny** | 400× | 269.120 | 3.716 | 1302.659 |
+| **Swin-Tiny** | Mixed | 224.129 | 4.462 | 1302.659 |
+
+**What it shows:** DeiT has **lower VRAM** footprint and is **fastest** on **100×** in-domain; Swin is fastest on **Mixed** and **400×** among its own runs.
+
+---
+
+## 🧩 Optional: Subgroup Summary (Macro-F1, Acc, BalAcc) — Per Test Distribution
+*Handy for quick graphing across test sets; combine rows from the three runs of each model.*
+
+### Swin-Tiny — by Test Distribution
+| Test Group | Macro-F1 | Acc | BalAcc | Latency (ms/img) | Throughput (img/s) |
+|---|---:|---:|---:|---:|---:|
+| **100×** (from 100× run) | 0.958 | 0.958 | 0.958 | 303.168 | 3.298 |
+| **400×** (from 400× run) | 0.992 | 0.992 | 0.992 | 269.120 | 3.716 |
+| **Mixed** (from Mixed run) | 0.963 | 0.963 | 0.963 | 224.129 | 4.462 |
+
+### DeiT-Small — by Test Distribution
+| Test Group | Macro-F1 | Acc | BalAcc | Latency (ms/img) | Throughput (img/s) |
+|---|---:|---:|---:|---:|---:|
+| **100×** (from 100× run) | 0.979 | 0.979 | 0.979 | 166.581 | 6.003 |
+| **400×** (from 400× run) | 0.996 | 0.996 | 0.996 | 704.081 | 1.420 |
+| **Mixed** (from Mixed run) | 0.920 | 0.921 | 0.921 | 477.284 | 2.095 |
+
+**What it shows:** a compact “best per test distribution” view, useful for **bar charts** (Macro-F1, Acc, BalAcc) and **runtime plots**.
+
+---
+
+### ✅ Notes for plotting
+- Use **Macro-F1** as the headline bar; overlay **Acc**/**BalAcc** if needed.
+- For **robustness**, heatmap the **Cross-Domain** matrices.
+- For **efficiency**, draw **latency vs throughput** scatter per model/setup.
+
+
 
 ---
 
