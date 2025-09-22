@@ -227,8 +227,8 @@ Quick takeaways:
 
 > These are **in-domain** numbers (each model evaluated on the distribution it was trained on).
 
-![Efficiency Frontier — In-Domain Only](assets/efficiency_frontier.png)  
-<sub><b>Figure 5.</b> In-domain efficiency frontier — <b>latency vs throughput</b>; bubble size = peak GPU MB; color = setup; marker = model. [Open full-size](assets/efficiency_frontier.png)</sub>
+![Efficiency Frontier — In-Domain Only](https://raw.githubusercontent.com/HussamUmer/Vision4Healthcare/main/MagFusion_ViT/Outputs/Graphs/Efficiency_Snapshot/efficiency_frontier.png)
+<sub><b>Figure 5.</b> In-domain efficiency frontier — <b>latency vs throughput</b>; bubble size = peak GPU MB; color = setup; marker = model.</sub>
 
 ---
 
@@ -240,8 +240,8 @@ Quick takeaways:
 
 > **Read:** lower is better. **DeiT-Small** excels on **100×**; **Swin-Tiny** excels on **Mixed**/**400×**.
 
-![Latency (ms/img) — In-Domain Only](assets/latency.png)  
-<sub><b>Figure 6.</b> In-domain efficiency view — <b>latency</b> (ms/img). Lower is better. [Open full-size](assets/latency.png)</sub>
+![Latency (ms/img) — In-Domain Only](https://raw.githubusercontent.com/HussamUmer/Vision4Healthcare/main/MagFusion_ViT/Outputs/Graphs//Efficiency_Snapshot/latency.png)  
+<sub><b>Figure 6.</b> In-domain efficiency view — <b>latency</b> (ms/img). Lower is better.</sub>
 
 ---
 
@@ -253,8 +253,8 @@ Quick takeaways:
 
 > **Read:** higher is better. **DeiT-Small** is the fastest on **100×** overall; **Swin-Tiny** is fastest for **Mixed**.
 
-![Throughput (img/s) — In-Domain Only](assets/throughput.png)  
-<sub><b>Figure 7.</b> In-domain efficiency view — <b>throughput</b> (img/s). Higher is better. [Open full-size](assets/throughput.png)</sub>
+![Throughput (img/s) — In-Domain Only](https://raw.githubusercontent.com/HussamUmer/Vision4Healthcare/main/MagFusion_ViT/Outputs/Graphs//Efficiency_Snapshot/throughput.png)  
+<sub><b>Figure 7.</b> In-domain efficiency view — <b>throughput</b> (img/s). Higher is better.</sub>
 
 ---
 
@@ -266,8 +266,8 @@ Quick takeaways:
 
 > **Read:** **DeiT-Small** is ≈**2.5×** more memory-efficient than **Swin-Tiny**.
 
-![Peak GPU Memory (MB) — In-Domain Only](assets/peak_gpu.png)  
-<sub><b>Figure 8.</b> In-domain efficiency view — <b>peak GPU memory</b> (MB). Lower is better. [Open full-size](assets/peak_gpu.png)</sub>
+![Peak GPU Memory (MB) — In-Domain Only](https://raw.githubusercontent.com/HussamUmer/Vision4Healthcare/main/MagFusion_ViT/Outputs/Graphs//Efficiency_Snapshot/Peak_GPU.png)    
+<sub><b>Figure 8.</b> In-domain efficiency view — <b>peak GPU memory</b> (MB). Lower is better.</sub>
 
 ---
 
@@ -318,8 +318,8 @@ Quick takeaways:
 
 > **Interpretation:** DeiT-Small is fastest on **100×**; Swin-Tiny is faster on **400×** and **Mixed**.
 
-![Latency (ms/img) — In-Domain per Test Distribution](assets/latency_per_test.png)  
-<sub><b>Figure 9.</b> Latency by test distribution (lower is better). [Open full-size](assets/latency_per_test.png)</sub>
+![Latency (ms/img) — In-Domain per Test Distribution](https://raw.githubusercontent.com/HussamUmer/Vision4Healthcare/main/MagFusion_ViT/Outputs/Graphs//subgroup_summary/latency.png)    
+<sub><b>Figure 9.</b> Latency by test distribution (lower is better).</sub>
 
 ---
 
@@ -341,8 +341,8 @@ Quick takeaways:
 
 > **Interpretation:** Both models peak at **400×**; **DeiT-Small** leads on **100×**, while **Swin-Tiny** leads on **Mixed**.
 
-![Subgroup Summary — Macro-F1 / Acc / BalAcc (Per Test Distribution)](assets/subgroup_summary.png)  
-<sub><b>Figure 10.</b> Macro-F1, Accuracy, and Balanced Accuracy per test distribution for each model. [Open full-size](assets/subgroup_summary.png)</sub>
+![Subgroup Summary — Macro-F1 / Acc / BalAcc (Per Test Distribution)](https://raw.githubusercontent.com/HussamUmer/Vision4Healthcare/main/MagFusion_ViT/Outputs/Graphs//subgroup_summary/summary.png)
+<sub><b>Figure 10.</b> Macro-F1, Accuracy, and Balanced Accuracy per test distribution for each model.</sub>
 
 
 ---
@@ -356,8 +356,8 @@ Quick takeaways:
 
 > **Interpretation:** Higher is better. DeiT-Small is the fastest on **100×** overall; Swin-Tiny is faster on **400×** and **Mixed**.
 
-![Throughput (img/s) — In-Domain per Test Distribution](assets/throughput_per_test.png)  
-<sub><b>Figure 11.</b> Throughput by test distribution (higher is better). [Open full-size](assets/throughput_per_test.png)</sub>
+![Throughput (img/s) — In-Domain per Test Distribution](https://raw.githubusercontent.com/HussamUmer/Vision4Healthcare/main/MagFusion_ViT/Outputs/Graphs//subgroup_summary/throughput.png)  
+<sub><b>Figure 11.</b> Throughput by test distribution (higher is better).</sub>
 
 ---
 
@@ -374,8 +374,8 @@ Quick takeaways:
 
 > **Interpretation:** **DeiT-Small (100×)** sits at the **upper-left** (lowest latency, highest throughput). **Swin-Tiny (Mixed)** is the fastest Swin point; **DeiT-Small (400×)** is furthest from the frontier.
 
-![Efficiency Frontier — In-Domain per Test Distribution](assets/efficiency_frontier_per_test.png)  
-<sub><b>Figure 12.</b> Efficiency frontier (latency vs throughput); color = test set, marker = model. [Open full-size](assets/efficiency_frontier_per_test.png)</sub>
+![Efficiency Frontier — In-Domain per Test Distribution](https://raw.githubusercontent.com/HussamUmer/Vision4Healthcare/main/MagFusion_ViT/Outputs/Graphs//subgroup_summary/efficiency.png)  
+<sub><b>Figure 12.</b> Efficiency frontier (latency vs throughput); color = test set, marker = model.</sub>
 
 ---
 
