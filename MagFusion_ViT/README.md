@@ -160,6 +160,7 @@ Quick takeaways:
 > **Read:** focus on the **bold off-diagonal** cells—those are the cross-domain results.
 
 ![In-Domain vs Cross-Domain (use the orange bars)](https://raw.githubusercontent.com/HussamUmer/Vision4Healthcare/main/MagFusion_ViT/Outputs/Graphs/Cross_Domain_Robustness/indomain_vs_crossdomain.png)
+
 <sub><b>Figure 1.</b> Averages of **in-domain** (blue, diagonal) vs **cross-domain** (orange, off-diagonal). For this section, focus on **cross-domain (orange)** to gauge robustness.</sub>
 
 ---
