@@ -389,7 +389,22 @@ Quick takeaways:
 
 ---
 
+## 📦 Experiment Artifacts & Checkpoints (Google Drive)
 
+Large files (logs, checkpoints, evaluation CSV/JSON, and figures) are hosted on Google Drive:
+
+🔗 **Drive folder:** https://drive.google.com/drive/folders/1qhvplLgcpmJn7D1f0HVC69GvwmzjEhwa?usp=sharing
+
+**Contents (typical):**
+- `runs/` — timestamped run directories (e.g., `2025-09-22_deit_100x/`)
+  - `config.yaml` (env, hyperparams, data roots)
+  - `train_log.csv` / `events.*` (training & validation curves)
+  - `best.ckpt` (checkpoint selected by validation macro-F1)
+  - `eval/` (JSON/CSV metrics, confusion matrices, latency/throughput)
+  - `figures/` (plots used in the README/paper)
+- `splits/` — frozen train/val/test path lists for reproducibility
+
+---
 
 ## 📚 **Citations (Background)**
 
