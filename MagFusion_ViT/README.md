@@ -152,7 +152,7 @@ Quick takeaways:
 > **Read:** focus on the **bold off-diagonal** cells—those are the cross-domain results.
 
 ![In-Domain vs Cross-Domain (use the orange bars)](path/to/indomain_vs_crossdomain.png)  
-<sub><b>Figure 3.</b> Averages of **in-domain** (blue, diagonal) vs **cross-domain** (orange, off-diagonal). For this section, focus on **cross-domain (orange)** to gauge robustness.</sub>
+<sub><b>Figure 1.</b> Averages of **in-domain** (blue, diagonal) vs **cross-domain** (orange, off-diagonal). For this section, focus on **cross-domain (orange)** to gauge robustness.</sub>
 
 ---
 
@@ -178,7 +178,7 @@ Quick takeaways:
 > **Interpretation:** Mixed training substantially reduces domain shift—**Swin-Tiny (Mixed)** is the most robust, with near-symmetric performance to both 100× and 400×.
 
 ![Generalization from Mixed Training](path/to/generalization_from_mixed.png)  
-<sub><b>Figure 1.</b> Cross-domain generalization from **Mixed training**. Bars show Macro-F1 on 100× and 400× tests (ignore Mixed→Mixed as it’s in-domain). **Swin-Tiny (Mixed)** is strongest and most symmetric.</sub>
+<sub><b>Figure 3.</b> Cross-domain generalization from **Mixed training**. Bars show Macro-F1 on 100× and 400× tests (ignore Mixed→Mixed as it’s in-domain). **Swin-Tiny (Mixed)** is strongest and most symmetric.</sub>
 
 ---
 
@@ -189,22 +189,6 @@ Quick takeaways:
 | **Swin-Tiny**  | **0.644** |
 
 > **Interpretation:** On average across all cross-domain conditions, **DeiT** edges **Swin**—but **Swin-Tiny (Mixed)** is the **best single recipe** if you can only train once and must handle both magnifications at test time.
-
-![Cross-Domain Robustness Heatmaps](path/to/crossdomain_robustness.png)  
-<sub><b>Figure 4.</b> Heatmaps of Train×Test Macro-F1. Emphasize the **off-diagonal** cells. Mixed rows are uniformly high, especially for **Swin-Tiny**.</sub>
-
----
-
-## 🖼️ Figures (cross-domain focus)
-
-![Generalization from Mixed Training](path/to/generalization_from_mixed.png)  
-<sub><b>Figure 1.</b> Cross-domain generalization from **Mixed training**. Bars show Macro-F1 on 100× and 400× tests (ignore Mixed→Mixed as it’s in-domain). **Swin-Tiny (Mixed)** is strongest and most symmetric.</sub>
-
-![Directional Generalization Asymmetry](path/to/directional_generalization.png)  
-<sub><b>Figure 2.</b> **Directional gap** between 100×→400× and 400×→100×. Both models struggle more when moving **down** in magnification (400×→100×).</sub>
-
-![In-Domain vs Cross-Domain (use the orange bars)](path/to/indomain_vs_crossdomain.png)  
-<sub><b>Figure 3.</b> Averages of **in-domain** (blue, diagonal) vs **cross-domain** (orange, off-diagonal). For this section, focus on **cross-domain (orange)** to gauge robustness.</sub>
 
 ![Cross-Domain Robustness Heatmaps](path/to/crossdomain_robustness.png)  
 <sub><b>Figure 4.</b> Heatmaps of Train×Test Macro-F1. Emphasize the **off-diagonal** cells. Mixed rows are uniformly high, especially for **Swin-Tiny**.</sub>
@@ -232,7 +216,7 @@ Quick takeaways:
 > These are **in-domain** numbers (each model evaluated on the distribution it was trained on).
 
 ![Efficiency Frontier — In-Domain Only](assets/efficiency_frontier.png)  
-<sub><b>Figure 4.</b> In-domain efficiency frontier — <b>latency vs throughput</b>; bubble size = peak GPU MB; color = setup; marker = model. [Open full-size](assets/efficiency_frontier.png)</sub>
+<sub><b>Figure 5.</b> In-domain efficiency frontier — <b>latency vs throughput</b>; bubble size = peak GPU MB; color = setup; marker = model. [Open full-size](assets/efficiency_frontier.png)</sub>
 
 ---
 
@@ -245,7 +229,7 @@ Quick takeaways:
 > **Read:** lower is better. **DeiT-Small** excels on **100×**; **Swin-Tiny** excels on **Mixed**/**400×**.
 
 ![Latency (ms/img) — In-Domain Only](assets/latency.png)  
-<sub><b>Figure 1.</b> In-domain efficiency view — <b>latency</b> (ms/img). Lower is better. [Open full-size](assets/latency.png)</sub>
+<sub><b>Figure 6.</b> In-domain efficiency view — <b>latency</b> (ms/img). Lower is better. [Open full-size](assets/latency.png)</sub>
 
 ---
 
@@ -258,7 +242,7 @@ Quick takeaways:
 > **Read:** higher is better. **DeiT-Small** is the fastest on **100×** overall; **Swin-Tiny** is fastest for **Mixed**.
 
 ![Throughput (img/s) — In-Domain Only](assets/throughput.png)  
-<sub><b>Figure 3.</b> In-domain efficiency view — <b>throughput</b> (img/s). Higher is better. [Open full-size](assets/throughput.png)</sub>
+<sub><b>Figure 7.</b> In-domain efficiency view — <b>throughput</b> (img/s). Higher is better. [Open full-size](assets/throughput.png)</sub>
 
 ---
 
@@ -271,7 +255,7 @@ Quick takeaways:
 > **Read:** **DeiT-Small** is ≈**2.5×** more memory-efficient than **Swin-Tiny**.
 
 ![Peak GPU Memory (MB) — In-Domain Only](assets/peak_gpu.png)  
-<sub><b>Figure 2.</b> In-domain efficiency view — <b>peak GPU memory</b> (MB). Lower is better. [Open full-size](assets/peak_gpu.png)</sub>
+<sub><b>Figure 8.</b> In-domain efficiency view — <b>peak GPU memory</b> (MB). Lower is better. [Open full-size](assets/peak_gpu.png)</sub>
 
 ---
 
@@ -281,28 +265,19 @@ Quick takeaways:
 | **DeiT-Small** | **100×** | **166.581** | **6.003** | **528.254** |
 | **Swin-Tiny**  | **Mixed** | **224.129** | **4.462** | 1302.659 |
 
-**Interpretation:** choose **DeiT-Small** when VRAM is tight or the target is **100×**; choose **Swin-Tiny** when you expect **mixed/400×** test conditions and have more memory.
-
----
-
-### 📈 Figures (In-Domain Only)
-
-![Latency (ms/img) — In-Domain Only](assets/latency.png)  
-<sub><b>Figure 1.</b> In-domain efficiency view — <b>latency</b> (ms/img). Lower is better. [Open full-size](assets/latency.png)</sub>
-
-![Peak GPU Memory (MB) — In-Domain Only](assets/peak_gpu.png)  
-<sub><b>Figure 2.</b> In-domain efficiency view — <b>peak GPU memory</b> (MB). Lower is better. [Open full-size](assets/peak_gpu.png)</sub>
-
-![Throughput (img/s) — In-Domain Only](assets/throughput.png)  
-<sub><b>Figure 3.</b> In-domain efficiency view — <b>throughput</b> (img/s). Higher is better. [Open full-size](assets/throughput.png)</sub>
-
-![Efficiency Frontier — In-Domain Only](assets/efficiency_frontier.png)  
-<sub><b>Figure 4.</b> In-domain efficiency frontier — <b>latency vs throughput</b>; bubble size = peak GPU MB; color = setup; marker = model. [Open full-size](assets/efficiency_frontier.png)</sub>
+> **Interpretation:** choose **DeiT-Small** when VRAM is tight or the target is **100×**; choose **Swin-Tiny** when you expect **mixed/400×** test conditions and have more memory.
 
 ---
 
 ## 🧩 Subgroup Summary (Macro-F1, Acc, BalAcc) — Per Test Distribution
 *Handy for quick graphing across test sets; combine rows from the three runs of each model.*
+
+**At a glance**
+- For **100× tests**, **DeiT-Small** is both **more accurate** and **faster** (Macro-F1≈0.979; 166.6 ms/img).
+- For **400× tests**, **both models** peak (Macro-F1≈0.992–0.996); **Swin-Tiny** is quicker.
+- For **Mixed tests**, **Swin-Tiny** leads in both **accuracy** (≈0.963) and **speed** (≈224 ms/img, 4.46 img/s).
+
+---
 
 ### Swin-Tiny — by Test Distribution
 | Test Group | Macro-F1 | Acc | BalAcc | Latency (ms/img) | Throughput (img/s) |
@@ -322,12 +297,73 @@ Quick takeaways:
 
 ---
 
-### ✅ Notes for plotting
-- Use **Macro-F1** as the headline bar; overlay **Acc**/**BalAcc** if needed.
-- For **robustness**, heatmap the **Cross-Domain** matrices.
-- For **efficiency**, draw **latency vs throughput** scatter per model/setup.
+### 1) Latency (ms/img) — In-Domain per Test Distribution
+| Test Distribution | DeiT-Small (↓) | Swin-Tiny (↓) | Winner |
+|---|---:|---:|---|
+| **100×** | **166.581** | 303.168 | **DeiT-Small** |
+| **400×** | 704.081 | **269.120** | **Swin-Tiny** |
+| **Mixed** | 477.284 | **224.129** | **Swin-Tiny** |
+
+> **Interpretation:** DeiT-Small is fastest on **100×**; Swin-Tiny is faster on **400×** and **Mixed**.
+
+![Latency (ms/img) — In-Domain per Test Distribution](assets/latency_per_test.png)  
+<sub><b>Figure 9.</b> Latency by test distribution (lower is better). [Open full-size](assets/latency_per_test.png)</sub>
+
+---
+
+### 2) Subgroup Summary — Macro-F1 / Acc / BalAcc (Per Test Distribution)
+
+**Swin-Tiny**
+| Test | Macro-F1 | Acc | BalAcc |
+|---|---:|---:|---:|
+| **100×** | 0.958 | 0.958 | 0.958 |
+| **400×** | 0.992 | 0.992 | 0.992 |
+| **Mixed** | 0.963 | 0.963 | 0.963 |
+
+**DeiT-Small**
+| Test | Macro-F1 | Acc | BalAcc |
+|---|---:|---:|---:|
+| **100×** | 0.979 | 0.979 | 0.979 |
+| **400×** | 0.996 | 0.996 | 0.996 |
+| **Mixed** | 0.920 | 0.921 | 0.921 |
+
+> **Interpretation:** Both models peak at **400×**; **DeiT-Small** leads on **100×**, while **Swin-Tiny** leads on **Mixed**.
+
+![Subgroup Summary — Macro-F1 / Acc / BalAcc (Per Test Distribution)](assets/subgroup_summary.png)  
+<sub><b>Figure 10.</b> Macro-F1, Accuracy, and Balanced Accuracy per test distribution for each model. [Open full-size](assets/subgroup_summary.png)</sub>
 
 
+---
+
+### 3) Throughput (img/s) — In-Domain per Test Distribution
+| Test Distribution | DeiT-Small (↑) | Swin-Tiny (↑) | Winner |
+|---|---:|---:|---|
+| **100×** | **6.003** | 3.298 | **DeiT-Small** |
+| **400×** | 1.420 | **3.716** | **Swin-Tiny** |
+| **Mixed** | 2.095 | **4.462** | **Swin-Tiny** |
+
+> **Interpretation:** Higher is better. DeiT-Small is the fastest on **100×** overall; Swin-Tiny is faster on **400×** and **Mixed**.
+
+![Throughput (img/s) — In-Domain per Test Distribution](assets/throughput_per_test.png)  
+<sub><b>Figure 11.</b> Throughput by test distribution (higher is better). [Open full-size](assets/throughput_per_test.png)</sub>
+
+---
+
+### 4) Efficiency Frontier Points — In-Domain per Test Distribution  
+*(Scatter shows each point; table lists exact coordinates & VRAM.)*
+| Model      | Test | Latency (ms/img) ↓ | Throughput (img/s) ↑ | Peak GPU (MB) |
+|---|---|---:|---:|---:|
+| **DeiT-Small** | 100×  | **166.581** | **6.003** | **528.254** |
+| **DeiT-Small** | 400×  | 704.081 | 1.420 | 528.254 |
+| **DeiT-Small** | Mixed | 477.284 | 2.095 | 528.004 |
+| **Swin-Tiny**  | 100×  | 303.168 | 3.298 | 1302.659 |
+| **Swin-Tiny**  | 400×  | 269.120 | 3.716 | 1302.659 |
+| **Swin-Tiny**  | Mixed | 224.129 | 4.462 | 1302.659 |
+
+> **Interpretation:** **DeiT-Small (100×)** sits at the **upper-left** (lowest latency, highest throughput). **Swin-Tiny (Mixed)** is the fastest Swin point; **DeiT-Small (400×)** is furthest from the frontier.
+
+![Efficiency Frontier — In-Domain per Test Distribution](assets/efficiency_frontier_per_test.png)  
+<sub><b>Figure 12.</b> Efficiency frontier (latency vs throughput); color = test set, marker = model. [Open full-size](assets/efficiency_frontier_per_test.png)</sub>
 
 ---
 
