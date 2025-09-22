@@ -124,75 +124,81 @@ Quick takeaways:
 ---
 
 ## 🔀 Cross-Domain Robustness — Macro-F1 (↑)
-## 📈 Results & Interpretation
 
-**Executive summary.**  
-- **Mixed training is the safest choice** when test magnification is unknown or variable. With **Swin-Tiny (Mixed)**, Macro-F1 stays ≈ **0.955–0.963** on **100×/400×/Mixed**.  
-- **Directional gaps are asymmetric:** models trained on **400×** drop **more** when tested at **100×** than the reverse.  
-- **In-domain vs cross-domain:** both backbones are near-perfect in-domain; performance drops off-domain unless trained on Mixed.
-
----
-
-### 1) Generalization from **Mixed** Training to Each Test Setup
-![Generalization from Mixed Training](path/to/generalization_from_mixed.png)
-
-<sub><b>Figure 1.</b> With **Mixed (100×+400×) training**, both models generalize across test magnifications.  
-DeiT-Small: **0.921 (100×)**, **0.933 (400×)**, **0.920 (Mixed)**.  
-Swin-Tiny: **0.955 (100×)**, **0.963 (400×)**, **0.963 (Mixed)**.  
-<b>Takeaway:</b> Mixed training largely eliminates domain sensitivity; **Swin-Tiny (Mixed)** yields the most consistent robustness across all tests.</sub>
+**What matters here:** performance when **train and test magnifications differ**.  
+**Key findings (at a glance):**
+- **Mixed training** gives the most reliable cross-domain behavior; **Swin-Tiny (Mixed)** is the most consistent (Macro-F1 ≈ **0.955–0.963** to both 100× and 400×).  
+- **Directional gap is asymmetric:** going **400× → 100×** is harder than **100× → 400×** for both models.  
+- Averaging all off-diagonal entries, **DeiT ≈ 0.713** and **Swin ≈ 0.644**; using a **Mixed recipe** is the simplest way to close the gap.
 
 ---
 
-### 2) Directional Generalization Asymmetry
-![Directional Generalization Asymmetry](path/to/directional_generalization.png)
+### 🧭 Cross-Domain Macro-F1 Matrices (for reference; diagonals are in-domain)
 
-<sub><b>Figure 2.</b> Macro-F1 when **training on one magnification and testing on the other**.  
-DeiT-Small: **100×→400× = 0.518** vs **400×→100× = 0.405**.  
-Swin-Tiny: **100×→400× = 0.337** vs **400×→100× = 0.245**.  
-<b>Takeaway:</b> The shift **400×→100× is harsher** than **100×→400×** for both models—likely due to the loss of fine-scale texture cues when moving to lower magnification. If your deployment domain is uncertain, avoid single-mag training.</sub>
+#### DeiT-Small — Train × Test (Macro-F1 ↑)
+| Train \ Test | 100× | 400× | Mixed |
+|---|---:|---:|---:|
+| **100×** | 0.979 *(in-domain)* | **0.518** | **0.769** |
+| **400×** | **0.405** | 0.996 *(in-domain)* | **0.734** |
+| **Mixed** | **0.921** | **0.933** | 0.920 *(in-domain)* |
 
----
+#### Swin-Tiny — Train × Test (Macro-F1 ↑)
+| Train \ Test | 100× | 400× | Mixed |
+|---|---:|---:|---:|
+| **100×** | 0.958 *(in-domain)* | **0.337** | **0.681** |
+| **400×** | **0.245** | 0.992 *(in-domain)* | **0.685** |
+| **Mixed** | **0.955** | **0.963** | 0.963 *(in-domain)* |
 
-### 3) In-Domain vs Cross-Domain Averages
-![In-domain vs Cross-domain](path/to/indomain_vs_crossdomain.png)
-
-<sub><b>Figure 3.</b> Average Macro-F1 on **in-domain (diagonal)** vs **cross-domain (off-diagonal)** settings.  
-DeiT-Small: **in-domain ≈ 0.965**, **cross-domain ≈ 0.713**.  
-Swin-Tiny: **in-domain ≈ 0.971**, **cross-domain ≈ 0.644**.  
-<b>Takeaway:</b> Both models are excellent in-domain; **generalization depends on the training recipe**. The drop off-domain is substantial for single-mag training, which motivates **Mixed training** as a default.</sub>
-
----
-
-### 4) Cross-Domain Robustness Matrices (Macro-F1 ↑)
-![Cross-Domain Robustness Matrices](path/to/crossdomain_robustness.png)
-
-<sub><b>Figure 4.</b> Train (rows) × Test (columns) Macro-F1.  
-<b>DeiT-Small:</b>  
-• Train 100× → Test: **100× 0.979**, **400× 0.518**, **Mixed 0.769**  
-• Train 400× → Test: **100× 0.405**, **400× 0.996**, **Mixed 0.734**  
-• Train Mixed → Test: **100× 0.921**, **400× 0.933**, **Mixed 0.920**  
-<b>Swin-Tiny:</b>  
-• Train 100× → Test: **100× 0.958**, **400× 0.337**, **Mixed 0.681**  
-• Train 400× → Test: **100× 0.245**, **400× 0.992**, **Mixed 0.685**  
-• Train Mixed → Test: **100× 0.955**, **400× 0.963**, **Mixed 0.963**  
-<b>Takeaway:</b> Diagonals (train=test) are near-perfect, but **off-diagonals suffer**—especially **400×→100×**. The **Mixed row** is uniformly high for both models, with **Swin-Tiny (Mixed)** slightly stronger.</sub>
+> **Read:** focus on the **bold off-diagonal** cells—those are the cross-domain results.
 
 ---
 
-### 📌 Practical Recommendations
+### 📐 Directional Asymmetry (train → test)
+| Model | 100× → 400× | 400× → 100× |
+|---|---:|---:|
+| **DeiT-Small** | **0.518** | **0.405** |
+| **Swin-Tiny**  | **0.337** | **0.245** |
 
-- **Unknown/Variable magnification at inference:** use **Mixed training**; prefer **Swin-Tiny (Mixed)** for the strongest cross-domain robustness.  
-- **Fixed 100× deployment:** both models are strong; **DeiT-Small** offers **lower VRAM** and was **fastest** in our 100× in-domain test.  
-- **Fixed 400× deployment:** both models near-perfect; **Swin-Tiny** showed excellent accuracy and good latency.  
-- **Benchmarking:** report the **3×3 Train×Test matrix** and the **in- vs cross-domain averages** (Figures 3–4) alongside individual confusion matrices for transparency.
+**Interpretation:** **400× → 100×** consistently underperforms **100× → 400×**, suggesting models trained on high-mag textures struggle to generalize down to lower magnification.
 
 ---
 
-> **Image paths to update:**  
-> `path/to/generalization_from_mixed.png`  
-> `path/to/directional_generalization.png`  
-> `path/to/indomain_vs_crossdomain.png`  
-> `path/to/crossdomain_robustness.png`
+### 🧪 Generalization from **Mixed** Training (cross-domain only)
+| Model | Mixed → 100× | Mixed → 400× |
+|---|---:|---:|
+| **DeiT-Small** | **0.921** | **0.933** |
+| **Swin-Tiny**  | **0.955** | **0.963** |
+
+**Interpretation:** Mixed training substantially reduces domain shift—**Swin-Tiny (Mixed)** is the most robust, with near-symmetric performance to both 100× and 400×.
+
+---
+
+### 🧮 Cross-Domain Mean (average of all off-diagonal cells)
+| Model | Mean Macro-F1 (↑) |
+|---|---:|
+| **DeiT-Small** | **0.713** |
+| **Swin-Tiny**  | **0.644** |
+
+**Interpretation:** On average across all cross-domain conditions, **DeiT** edges **Swin**—but **Swin-Tiny (Mixed)** is the **best single recipe** if you can only train once and must handle both magnifications at test time.
+
+---
+
+## 🖼️ Figures (cross-domain focus)
+
+![Generalization from Mixed Training](path/to/generalization_from_mixed.png)  
+<sub><b>Figure 1.</b> Cross-domain generalization from **Mixed training**. Bars show Macro-F1 on 100× and 400× tests (ignore Mixed→Mixed as it’s in-domain). **Swin-Tiny (Mixed)** is strongest and most symmetric.</sub>
+
+![Directional Generalization Asymmetry](path/to/directional_generalization.png)  
+<sub><b>Figure 2.</b> **Directional gap** between 100×→400× and 400×→100×. Both models struggle more when moving **down** in magnification (400×→100×).</sub>
+
+![In-Domain vs Cross-Domain (use the orange bars)](path/to/indomain_vs_crossdomain.png)  
+<sub><b>Figure 3.</b> Averages of **in-domain** (blue, diagonal) vs **cross-domain** (orange, off-diagonal). For this section, focus on **cross-domain (orange)** to gauge robustness.</sub>
+
+![Cross-Domain Robustness Heatmaps](path/to/crossdomain_robustness.png)  
+<sub><b>Figure 4.</b> Heatmaps of Train×Test Macro-F1. Emphasize the **off-diagonal** cells. Mixed rows are uniformly high, especially for **Swin-Tiny**.</sub>
+
+> Replace the `path/to/*.png` with your actual image paths in the repo.
+
 
 
 ---
