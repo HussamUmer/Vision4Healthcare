@@ -48,22 +48,26 @@ Each segmentation project includes:
 ---
 
 ### 🔭 3. Vision Transformer Projects
-This module explores **Vision Transformers (ViT family)** for medical imaging—leveraging **global/locally-aware attention** (e.g., **DeiT**, **Swin**) for **multi-class classification** and **cross-magnification robustness**.
+This module covers **Vision Transformers (ViT family)** for computer vision, focusing on **classification**, **detection**, **segmentation**, and **representation learning**. Projects typically compare backbones (e.g., **ViT/DeiT**, **Swin**, **ConvNeXt-ViT hybrids**, **Hybrid CNN+ViT**) across datasets and tasks, with strong emphasis on **robustness**, **efficiency**, and **interpretability**.
 
 #### 📂 Projects:
 - 🧬 [MagFusion-ViT: Multi-Magnification Fusion with Vision Transformers for Robust Breast Histopathology Classification](https://github.com/HussamUmer/Vision4Healthcare/tree/main/MagFusion_ViT)
 
-#### ✅ Each Vision Transformer project includes
-- 🧠 **Backbones & Heads:** ImageNet-1k **DeiT/Swin** with an **8-class** classifier head.
-- 📦 **Datasets & Splits:** BreakHis **100× / 400× / Mixed** setups with **frozen train/val/test splits**.
-- ⚙️ **Training Protocol:** AdamW, cosine LR + warmup, AMP, grad-clip, early stopping on **val macro-F1**.
-- 📊 **Metrics & Reports:** **Macro-F1**, Accuracy, Balanced Accuracy, **per-class PRF**, **confusion matrices**.
-- 🔀 **Robustness:** **3×3 Train×Test** **Macro-F1** matrices (100× / 400× / Mixed) to quantify cross-domain generalization.
-- ⏱️ **Efficiency:** **Latency (ms/img)**, **Throughput (img/s)**, **Peak GPU MB**, plus an **efficiency frontier** plot.
-- 🔍 **Interpretability:** ViT **attention rollout** heatmaps, **t-SNE** of pretrained features, and **TP/FP/FN** exemplar grids.
-- 🧪 **Ablations (optional):** **Mixed vs single** magnification training; **stain normalization** vs none.
-- ♻️ **Reproducibility:** Fixed seeds, **config.yaml**, saved checkpoints, timestamped **runs/** directories, and **Colab notebooks** per setup.
-
+#### ✅ Each ViT project generally includes
+- 🧠 **Backbones & Heads:** ViT/DeiT/Swin variants (ImageNet-pretrained) with task-specific heads (linear/classifier, DETR-style decoder, segmentation decoder).
+- 📦 **Datasets & Protocols:** Clear dataset splits (train/val/test), data cards, class balance notes, and optional domain-shift settings.
+- ⚙️ **Training Setup:** AdamW, cosine LR + warmup, AMP mixed precision, gradient clipping, early stopping/checkpointing.
+- 📊 **Metrics:**  
+  - *Classification*: Top-1/Top-5 Acc, **Macro-F1**, ROC-AUC (if multi-label)  
+  - *Detection*: mAP@[.50:.95]  
+  - *Segmentation*: mIoU, Dice  
+  - *Calibration*: ECE/reliability (optional)
+- 🔀 **Robustness & Generalization:** Cross-domain or cross-resolution tests; corruption/stain/augmentation stress tests; few-shot/low-data settings.
+- ⏱️ **Efficiency Reporting:** Latency (ms/img), throughput (img/s), peak GPU memory, parameter/FLOP counts; “efficiency frontier” plots.
+- 🔍 **Interpretability:** Attention rollout/Grad-CAM, token/patch attribution, saliency maps, exemplar TP/FP/FN grids.
+- 🧪 **Ablations (Optional):** Augmentation strength, patch size, window size (Swin), drop-path/dropout, head depth, fine-tune vs linear probe.
+- ♻️ **Reproducibility:** Fixed seeds, frozen splits (path lists), `config.yaml` (env + hyperparams), saved checkpoints, run logs.
+- 🚀 **Deployment (optional):** ONNX/ TorchScript export, INT8/FP16 benchmarking, batch-size/throughput trade-offs.
 
 ---
 
