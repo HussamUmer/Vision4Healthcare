@@ -47,11 +47,30 @@ Each segmentation project includes:
 
 ---
 
+### 🔭 3. Vision Transformer Projects
+This module explores **Vision Transformers (ViT family)** for medical imaging—leveraging **global/locally-aware attention** (e.g., **DeiT**, **Swin**) for **multi-class classification** and **cross-magnification robustness**.
+
+#### 📂 Projects:
+- 🧬 [MagFusion-ViT: Multi-Magnification Fusion with Vision Transformers for Robust Breast Histopathology Classification](https://github.com/HussamUmer/Vision4Healthcare/tree/main/MagFusion_ViT)
+
+#### ✅ Each Vision Transformer project includes
+- 🧠 **Backbones & Heads:** ImageNet-1k **DeiT/Swin** with an **8-class** classifier head.
+- 📦 **Datasets & Splits:** BreakHis **100× / 400× / Mixed** setups with **frozen train/val/test splits**.
+- ⚙️ **Training Protocol:** AdamW, cosine LR + warmup, AMP, grad-clip, early stopping on **val macro-F1**.
+- 📊 **Metrics & Reports:** **Macro-F1**, Accuracy, Balanced Accuracy, **per-class PRF**, **confusion matrices**.
+- 🔀 **Robustness:** **3×3 Train×Test** **Macro-F1** matrices (100× / 400× / Mixed) to quantify cross-domain generalization.
+- ⏱️ **Efficiency:** **Latency (ms/img)**, **Throughput (img/s)**, **Peak GPU MB**, plus an **efficiency frontier** plot.
+- 🔍 **Interpretability:** ViT **attention rollout** heatmaps, **t-SNE** of pretrained features, and **TP/FP/FN** exemplar grids.
+- 🧪 **Ablations (optional):** **Mixed vs single** magnification training; **stain normalization** vs none.
+- ♻️ **Reproducibility:** Fixed seeds, **config.yaml**, saved checkpoints, timestamped **runs/** directories, and **Colab notebooks** per setup.
+
+
+---
+
 ## 🛣️ Roadmap (Modules Coming Soon)
 
 | Module | Description | ETA |
 |--------|-------------|-----|
-| 🧠 Vision Transformers | ViT, Swin Transformer, MedViT on MRI & CT datasets | Sep 2025 |
 | 🎯 Object Detection | YOLOv8, Faster R-CNN for lesion localization | Oct–Nov 2025 |
 | 🤝 Model Fusion & Ensembling | Combining CNN + ViT + GANs | Nov–Dec 2025 |
 | 🔄 Knowledge Distillation | For efficient deployment on edge devices | Winter 2025 |
