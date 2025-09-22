@@ -367,6 +367,32 @@ Quick takeaways:
 
 ---
 
+## 🧩 In-Domain Confusion Matrices (DeiT-Small & Swin-Tiny)
+
+**What this shows:** Per-setup, in-domain performance (Train = Test). Each matrix is **row-normalized** (values sum to 1 per true class) so off-diagonal intensity reflects misclassification patterns. All plots use the **same class order** and **same color scale** for fair visual comparison.
+
+---
+
+### 🤖 DeiT-Small — In-Domain CMs (Train = Test)
+
+| 100× | 400× | Mixed |
+|---|---|---|
+| ![DeiT-Small — 100× (in-domain CM)](assets/cm_deit_100x.png) | ![DeiT-Small — 400× (in-domain CM)](assets/cm_deit_400x.png) | ![DeiT-Small — Mixed (in-domain CM)](assets/cm_deit_mixed.png) |
+| <sub><b>Figure D1.</b> 100× in-domain CM. [Open full-size](assets/cm_deit_100x.png)</sub> | <sub><b>Figure D2.</b> 400× in-domain CM. [Open full-size](assets/cm_deit_400x.png)</sub> | <sub><b>Figure D3.</b> Mixed in-domain CM. [Open full-size](assets/cm_deit_mixed.png)</sub> |
+
+---
+
+### 🪟 Swin-Tiny — In-Domain CMs (Train = Test)
+
+| 100× | 400× | Mixed |
+|---|---|---|
+| ![Swin-Tiny — 100× (in-domain CM)](assets/cm_swin_100x.png) | ![Swin-Tiny — 400× (in-domain CM)](assets/cm_swin_400x.png) | ![Swin-Tiny — Mixed (in-domain CM)](assets/cm_swin_mixed.png) |
+| <sub><b>Figure S1.</b> 100× in-domain CM. [Open full-size](assets/cm_swin_100x.png)</sub> | <sub><b>Figure S2.</b> 400× in-domain CM. [Open full-size](assets/cm_swin_400x.png)</sub> | <sub><b>Figure S3.</b> Mixed in-domain CM. [Open full-size](assets/cm_swin_mixed.png)</sub> |
+
+---
+
+
+
 ## 📚 **Citations (Background)**
 
 - **DeiT:** Touvron et al., *Training data-efficient image transformers & distillation through attention*. ICML 2021.  
