@@ -173,7 +173,8 @@ Quick takeaways:
 
 > **Interpretation:** **400× → 100×** consistently underperforms **100× → 400×**, suggesting models trained on high-mag textures struggle to generalize down to lower magnification.
 
-![Directional Generalization Asymmetry](path/to/directional_generalization.png)  
+![Directional Generalization Asymmetry](https://raw.githubusercontent.com/HussamUmer/Vision4Healthcare/main/MagFusion_ViT/Outputs/Graphs/Cross_Domain_Robustness/generalization.png)
+
 <sub><b>Figure 2.</b> **Directional gap** between 100×→400× and 400×→100×. Both models struggle more when moving **down** in magnification (400×→100×).</sub>
 
 ---
@@ -186,7 +187,8 @@ Quick takeaways:
 
 > **Interpretation:** Mixed training substantially reduces domain shift—**Swin-Tiny (Mixed)** is the most robust, with near-symmetric performance to both 100× and 400×.
 
-![Generalization from Mixed Training](path/to/generalization_from_mixed.png)  
+![Generalization from Mixed Training](https://raw.githubusercontent.com/HussamUmer/Vision4Healthcare/main/MagFusion_ViT/Outputs/Graphs/Cross_Domain_Robustness/generalization_from_mixed.png)
+ 
 <sub><b>Figure 3.</b> Cross-domain generalization from **Mixed training**. Bars show Macro-F1 on 100× and 400× tests (ignore Mixed→Mixed as it’s in-domain). **Swin-Tiny (Mixed)** is strongest and most symmetric.</sub>
 
 ---
@@ -199,7 +201,8 @@ Quick takeaways:
 
 > **Interpretation:** On average across all cross-domain conditions, **DeiT** edges **Swin**—but **Swin-Tiny (Mixed)** is the **best single recipe** if you can only train once and must handle both magnifications at test time.
 
-![Cross-Domain Robustness Heatmaps](path/to/crossdomain_robustness.png)  
+![Cross-Domain Robustness Heatmaps](https://raw.githubusercontent.com/HussamUmer/Vision4Healthcare/main/MagFusion_ViT/Outputs/Graphs/Cross_Domain_Robustness/crossdomain_robustness.png)
+
 <sub><b>Figure 4.</b> Heatmaps of Train×Test Macro-F1. Emphasize the **off-diagonal** cells. Mixed rows are uniformly high, especially for **Swin-Tiny**.</sub>
 
 ---
