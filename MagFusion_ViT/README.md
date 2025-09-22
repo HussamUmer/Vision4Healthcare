@@ -385,7 +385,7 @@ Quick takeaways:
 
 | 100× | 400× | Mixed |
 |---|---|---|
-| ![Sin-Tiny — 100× (in-domain CM)](https://raw.githubusercontent.com/HussamUmer/Vision4Healthcare/main/MagFusion_ViT/Outputs/Graphs/confusion_matrices/sintiny/indomain/100x.png) | ![Swin-Tiny — 400× (in-domain CM)](https://raw.githubusercontent.com/HussamUmer/Vision4Healthcare/main/MagFusion_ViT/Outputs/Graphs/confusion_matrices/sintiny/indomain/400x.png) | ![Swin-Tiny — Mixed (in-domain CM)](https://raw.githubusercontent.com/HussamUmer/Vision4Healthcare/main/MagFusion_ViT/Outputs/Graphs/confusion_matrices/deitsmall/indomain/sintiny.png) |
+| ![Sin-Tiny — 100× (in-domain CM)](https://raw.githubusercontent.com/HussamUmer/Vision4Healthcare/main/MagFusion_ViT/Outputs/Graphs/confusion_matrices/swintiny/indomain/100x.png) | ![Swin-Tiny — 400× (in-domain CM)](https://raw.githubusercontent.com/HussamUmer/Vision4Healthcare/main/MagFusion_ViT/Outputs/Graphs/confusion_matrices/sintiny/indomain/400x.png) | ![Swin-Tiny — Mixed (in-domain CM)](https://raw.githubusercontent.com/HussamUmer/Vision4Healthcare/main/MagFusion_ViT/Outputs/Graphs/confusion_matrices/swintiny/indomain/mixed.png) |
 
 ---
 
