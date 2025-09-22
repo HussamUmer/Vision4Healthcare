@@ -34,6 +34,14 @@ We report **macro-F1**, **balanced accuracy**, **per-class F1**, **confusion mat
 - **Val:** 30 images/class  
 - **Test:** 30 images/class
 
+### 🔗 **Prepared splits (Google Drive)**
+> These folders contain our **prepared per-setup splits** with the directory layout  
+> `training/`, `validation/`, `testing/` (8 classes each), matching the counts above.
+
+- **100× Split:** https://drive.google.com/drive/folders/1m_4qZeVgjgaNhufJP6tRgP5z6Y6GakoC?usp=sharing  
+- **400× Split:** https://drive.google.com/drive/folders/1s9xMnK96_QO084fTWo8vqW5jWFv3WNXr?usp=sharing  
+- **Mixed (100× + 400×) Split:** https://drive.google.com/drive/folders/1Rv-1K6j8HFEy6kaf3UJXIP4lPF3TE8cg?usp=sharing
+
 ---
 
 ## 🧠 **Methodology (Overview)**
