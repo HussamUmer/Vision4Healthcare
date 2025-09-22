@@ -151,6 +151,9 @@ Quick takeaways:
 
 > **Read:** focus on the **bold off-diagonal** cells—those are the cross-domain results.
 
+![In-Domain vs Cross-Domain (use the orange bars)](path/to/indomain_vs_crossdomain.png)  
+<sub><b>Figure 3.</b> Averages of **in-domain** (blue, diagonal) vs **cross-domain** (orange, off-diagonal). For this section, focus on **cross-domain (orange)** to gauge robustness.</sub>
+
 ---
 
 ### 📐 Directional Asymmetry (train → test)
@@ -160,6 +163,9 @@ Quick takeaways:
 | **Swin-Tiny**  | **0.337** | **0.245** |
 
 **Interpretation:** **400× → 100×** consistently underperforms **100× → 400×**, suggesting models trained on high-mag textures struggle to generalize down to lower magnification.
+
+![Directional Generalization Asymmetry](path/to/directional_generalization.png)  
+<sub><b>Figure 2.</b> **Directional gap** between 100×→400× and 400×→100×. Both models struggle more when moving **down** in magnification (400×→100×).</sub>
 
 ---
 
@@ -171,6 +177,9 @@ Quick takeaways:
 
 **Interpretation:** Mixed training substantially reduces domain shift—**Swin-Tiny (Mixed)** is the most robust, with near-symmetric performance to both 100× and 400×.
 
+![Generalization from Mixed Training](path/to/generalization_from_mixed.png)  
+<sub><b>Figure 1.</b> Cross-domain generalization from **Mixed training**. Bars show Macro-F1 on 100× and 400× tests (ignore Mixed→Mixed as it’s in-domain). **Swin-Tiny (Mixed)** is strongest and most symmetric.</sub>
+
 ---
 
 ### 🧮 Cross-Domain Mean (average of all off-diagonal cells)
@@ -180,6 +189,9 @@ Quick takeaways:
 | **Swin-Tiny**  | **0.644** |
 
 **Interpretation:** On average across all cross-domain conditions, **DeiT** edges **Swin**—but **Swin-Tiny (Mixed)** is the **best single recipe** if you can only train once and must handle both magnifications at test time.
+
+![Cross-Domain Robustness Heatmaps](path/to/crossdomain_robustness.png)  
+<sub><b>Figure 4.</b> Heatmaps of Train×Test Macro-F1. Emphasize the **off-diagonal** cells. Mixed rows are uniformly high, especially for **Swin-Tiny**.</sub>
 
 ---
 
@@ -196,10 +208,6 @@ Quick takeaways:
 
 ![Cross-Domain Robustness Heatmaps](path/to/crossdomain_robustness.png)  
 <sub><b>Figure 4.</b> Heatmaps of Train×Test Macro-F1. Emphasize the **off-diagonal** cells. Mixed rows are uniformly high, especially for **Swin-Tiny**.</sub>
-
-> Replace the `path/to/*.png` with your actual image paths in the repo.
-
-
 
 ---
 
