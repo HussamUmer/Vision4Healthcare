@@ -401,6 +401,22 @@ Quick takeaways:
 
 ---
 
+## ⚠️ Worst-Case Cross-Domain Confusion Matrices (One per Model)
+
+**What this shows:** The **most challenging** cross-magnification condition for each model.  
+From our Train×Test Macro-F1 matrices, the **worst case** is **400× → 100×** for both models (largest drop).
+
+| DeiT-Small — 400× → 100× | Swin-Tiny — 400× → 100× |
+|---|---|
+| ![DeiT-Small — CM (400×→100×)](https://raw.githubusercontent.com/HussamUmer/Vision4Healthcare/main/MagFusion_ViT/Outputs/Graphs/confusion_matrices/deitsmall/400x_mixed_100x/<FILENAME>.png) | ![Swin-Tiny — CM (400×→100×)](https://raw.githubusercontent.com/HussamUmer/Vision4Healthcare/main/MagFusion_ViT/Outputs/Graphs/confusion_matrices/swintiny/400x_mixed_100x/<FILENAME>.png) |
+| <sub><b>Figure W1.</b> DeiT-Small worst-case CM (row-normalized). </sub> | <sub><b>Figure W2.</b> Swin-Tiny worst-case CM (row-normalized). </sub> |
+
+> 🔎 **More confusion matrices (all setups & directions):**  
+> https://github.com/HussamUmer/Vision4Healthcare/tree/main/MagFusion_ViT/Outputs/Graphs/confusion_matrices
+
+
+---
+
 ## 📦 Experiment Artifacts & Checkpoints (Google Drive)
 
 Large files (logs, checkpoints, evaluation CSV/JSON, and figures) are hosted on Google Drive:
