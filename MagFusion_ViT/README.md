@@ -421,6 +421,18 @@ From our Train×Test Macro-F1 matrices, the **worst case** is **400× → 100×*
 
 ---
 
+## 📈 Training & Validation Curves
+
+We provide consolidated plots for:
+- **Training vs Validation Loss**
+- **Training vs Validation Accuracy**
+- **Macro-F1 per epoch** (and/or Validation F1)
+
+🔗 **Browse all figures:** [Open training log graphs »](https://github.com/HussamUmer/Vision4Healthcare/tree/main/MagFusion_ViT/Outputs/Graphs/training_logs)
+
+
+---
+
 ## 📦 Experiment Artifacts & Checkpoints (Google Drive)
 
 Large files (logs, checkpoints, evaluation CSV/JSON, and figures) are hosted on Google Drive:
