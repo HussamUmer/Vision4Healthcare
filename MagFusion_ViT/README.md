@@ -425,7 +425,7 @@ From our Train×Test Macro-F1 matrices, the **worst case** is **400× → 100×*
 
 Large files (logs, checkpoints, evaluation CSV/JSON, and figures) are hosted on Google Drive:
 
-🔗 **Drive folder:** https://drive.google.com/drive/folders/1qhvplLgcpmJn7D1f0HVC69GvwmzjEhwa?usp=sharing
+🔗 **Drive folder:** [Open Google Drive folder »](https://drive.google.com/drive/folders/1qhvplLgcpmJn7D1f0HVC69GvwmzjEhwa?usp=sharing)
 
 **Contents (typical):**
 - `runs/` — timestamped run directories (e.g., `2025-09-22_deit_100x/`)
