@@ -82,7 +82,7 @@ We report **macro-F1**, **balanced accuracy**, **per-class F1**, **confusion mat
 ### 🪟 **Swin-Tiny runs**
 | Run | Notebook | Notes |
 |---|---|---|
-| **Swin-Tiny-100×** | [Open in Colab](https://colab.research.google.com/github/<USER>/<REPO>/blob/main/notebooks/swin_tiny_100x.ipynb) | Train on **100×**; primary test **100×**; robustness: **400×**, **Mixed** |
+| **Swin-Tiny-100×** | [Open in Colab](https://colab.research.google.com/github/HussamUmer/Vision4Healthcare/blob/main/MagFusion_ViT/Notebooks/SwinTiny_100x%20%281%29.ipynb) | Train on **100×**; primary test **100×**; robustness: **400×**, **Mixed** |
 | **Swin-Tiny-400×** | [Open in Colab](https://colab.research.google.com/github/<USER>/<REPO>/blob/main/notebooks/swin_tiny_400x.ipynb) | Train on **400×**; primary test **400×**; robustness: **100×**, **Mixed** |
 | **Swin-Tiny-Mixed** | [Open in Colab](https://colab.research.google.com/github/<USER>/<REPO>/blob/main/notebooks/swin_tiny_mixed.ipynb) | Train on **Mixed**; primary test **Mixed**; robustness: **100×**, **400×** |
 
