@@ -52,6 +52,7 @@ This module covers **Vision Transformers (ViT family)** for computer vision, foc
 
 #### 📂 Projects:
 - 🧬 [MagFusion-ViT: Multi-Magnification Fusion with Vision Transformers for Robust Breast Histopathology Classification](https://github.com/HussamUmer/Vision4Healthcare/tree/main/MagFusion_ViT)
+- 🧠 [AttentionViT-BCDiagnosis: Vision Transformer for Multi-Class Breast Cancer Histopathology](https://github.com/HussamUmer/AttentionViT-BCDiagnosis)
 
 #### ✅ Each ViT project generally includes
 - 🧠 **Backbones & Heads:** ViT/DeiT/Swin variants (ImageNet-pretrained) with task-specific heads (linear/classifier, DETR-style decoder, segmentation decoder).
@@ -84,6 +85,20 @@ Each project includes:
 - ⚖️ Balanced training and test dataset splits  
 - 📜 Training logs, analysis notebooks & reproducible experiments
 
+---
+
+### 🎭 5. GANs-Based Medical Image Translation
+Leveraging Generative Adversarial Networks (GANs) for unpaired image-to-image translation tasks in medical imaging, such as stain normalization, domain adaptation, and synthetic data generation.
+
+#### 📂 Projects:
+- 🧬 [TL-S-CycleGAN: Tumor Localization and Segmentation with CycleGAN Variants](https://github.com/HussamUmer/TL-S-CycleGAN-Histopathology)
+
+Each project includes:
+- 🖼️ Unpaired image translation between benign and malignant, CT - MRI and vice versa, images
+- 📊 Evaluation metrics: SSIM, PSNR, FID, and Dice coefficient
+- 🎨 Sample generated images showcasing domain adaptation
+- 📜 Training and testing notebooks with visualizations
+- 🧪 Comparative analysis of different GANs and its variants
 
 ---
 
