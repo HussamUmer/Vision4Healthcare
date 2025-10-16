@@ -71,14 +71,28 @@ This module covers **Vision Transformers (ViT family)** for computer vision, foc
 
 ---
 
+### 🔄 4. Knowledge Distillation
+Implementation and evaluation of lightweight student models distilled from powerful teacher models for medical image analysis, enabling real-time performance on edge devices.
+
+#### 📂 Projects:
+- 🖼️ [MLFFAKD: Multilayer Feature Fusion Attention-Based Knowledge Distillation for White Blood Cell Detection](https://github.com/HussamUmer/MLFFAKD-White-Blood-Cell-Detection)
+
+Each project includes:
+- 📊 Teacher vs Student model performance comparisons  
+- 📈 Accuracy, precision, recall, F1-score  
+- 🧪 Feature map visualizations & attention analysis  
+- ⚖️ Balanced training and test dataset splits  
+- 📜 Training logs, analysis notebooks & reproducible experiments
+
+
+---
+
 ## 🛣️ Roadmap (Modules Coming Soon)
 
 | Module | Description | ETA |
 |--------|-------------|-----|
-| 🎯 Object Detection | YOLOv8, Faster R-CNN for lesion localization | Oct–Nov 2025 |
-| 🤝 Model Fusion & Ensembling | Combining CNN + ViT + GANs | Nov–Dec 2025 |
-| 🔄 Knowledge Distillation | For efficient deployment on edge devices | Winter 2025 |
-
+| 🎯 Object Detection | YOLOv8, Faster R-CNN for lesion localization | Nov–Dec 2025 |
+| 🤝 Model Fusion & Ensembling | Combining CNN + ViT + GANs | Winter 2025/26 |
 ---
 
 ## 🧾 License
