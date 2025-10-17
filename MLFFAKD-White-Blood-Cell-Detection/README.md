@@ -55,7 +55,7 @@ Our **MLFFAKD framework**:
 
 | Teacher Model CM | Student Model CM |
 |------------------|------------------|
-| ![Confusion Matrix](Sample%20Outputs/download3.png) | ![Student Confusion Matrix](Sample%20Outputs/download2.png) |
+| ![Confusion Matrix](Confusion%20Matrices/download3.png) | ![Student Confusion Matrix](Confusion%20Matrices/download2.png) |
 
 ---
 
@@ -121,7 +121,7 @@ jupyter notebook "Jupyter Notebook/MFFAKD_final_notebook.ipynb"
 Our proposed **MLFFAKD** framework outperforms several state-of-the-art white blood cell classification models in terms of **accuracy, precision, recall, and F1-score**.  
 The results highlight the effectiveness of **multi-level feature fusion** and **attention-based knowledge distillation**, enabling superior performance while maintaining computational efficiency.
 
-![Model Comparison](Sample%20Outputs/Comparison%20Graph/download%20(2).png)
+![Model Comparison](Comparison%20Graphs/download%20(2).png)
 
 
 ## 📧 Contact
