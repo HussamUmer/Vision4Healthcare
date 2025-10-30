@@ -145,4 +145,15 @@ _Figure 4. Peak VRAM during inference (lower is better)._
 | UNet++      | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/HussamUmer/Vision4Healthcare/blob/main/SegCompare_ISIC2016_UNetFamily_DeepLabV3Plus/note%20book/UNET++R34_BaseLine.ipynb) |
 | DeepLabV3+  | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/HussamUmer/Vision4Healthcare/blob/main/SegCompare_ISIC2016_UNetFamily_DeepLabV3Plus/note%20book/dlab_r50_model_BaseLine.ipynb) |
 
+---
+
+### 📦 Run Artifacts (figures, configs, logs, checkpoints)
+
+All files generated during each run — figures, configs, CSV logs, JSON summaries, checkpoints, and qualitative grids — are available here:
+
+| Model        | Artifacts Folder |
+|--------------|------------------|
+| **UNETR34**  | [Open artifacts](https://drive.google.com/drive/folders/1iZWiMTICBFLs9kOMsfznP6ze58VpR5NI?usp=sharing) |
+| **UNETR34++**| [Open artifacts](https://drive.google.com/drive/folders/1hNdwskmpUuQF5vMyo0Vlt3bmx5-Ckha_?usp=sharing) |
+| **DeepLabV3**| [Open artifacts](https://drive.google.com/drive/folders/1dN8J0I0Djb1TD-t54ITXoy5OgKqQkeFr?usp=sharing) |
 
