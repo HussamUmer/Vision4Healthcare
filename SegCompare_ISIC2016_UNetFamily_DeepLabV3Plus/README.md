@@ -107,6 +107,41 @@ _Figure 4. Peak VRAM during inference (lower is better)._
 
 ---
 
+## 🖼️ Qualitative Results — 12-Image Test Grids
+
+> Each grid shows **12 fixed test cases** (ISIC-2016, 256×256). Columns (left → right): **input image**, **ground-truth overlay**, **prediction overlay**, **prediction boundary**. All runs use the same preprocessing, threshold, and evaluation settings.
+
+---
+
+<h3 align="center">DeepLabV3+ — 12-Image Test Grid</h3>
+
+<p align="center">
+  <img src="https://github.com/HussamUmer/Vision4Healthcare/blob/main/SegCompare_ISIC2016_UNetFamily_DeepLabV3Plus/output_figures/12_figure/DeepLabV3%2B_ISIC2016_IMG256_SEED42_2025-10-29_10-00-54_test_grid_4panels_12.png" alt="DeepLabV3+ 12-image qualitative grid on ISIC2016" width="900">
+</p>
+<p align="center"><i>Figure 1 — DeepLabV3+: consistent lesion localization with strong boundary adherence across diverse appearances.</i></p>
+
+---
+
+<h3 align="center">UNet — 12-Image Test Grid</h3>
+
+<!-- Note: The file name includes "TransUNet" but this figure corresponds to UNet results. -->
+<p align="center">
+  <img src="https://github.com/HussamUmer/Vision4Healthcare/blob/main/SegCompare_ISIC2016_UNetFamily_DeepLabV3Plus/output_figures/12_figure/TransUNet_ISIC2016_IMG256_SEED42_2025-10-28_10-42-07_test_grid_4panels_12.png" alt="UNet 12-image qualitative grid on ISIC2016 (file name contains TransUNet)" width="900">
+</p>
+<p align="center"><i>Figure 2 — UNet: clean masks with low false positives; small structures occasionally under-segmented.</i></p>
+
+---
+
+<h3 align="center">UNet++ — 12-Image Test Grid</h3>
+
+<p align="center">
+  <img src="https://github.com/HussamUmer/Vision4Healthcare/blob/main/SegCompare_ISIC2016_UNetFamily_DeepLabV3Plus/output_figures/12_figure/UNet%2B%2B_ISIC2016_IMG256_SEED42_2025-10-28_15-06-31_test_grid_4panels_12.png" alt="UNet++ 12-image qualitative grid on ISIC2016" width="900">
+</p>
+<p align="center"><i>Figure 3 — UNet++: sharper lesion contours and fewer boundary leaks, reflecting its dense skip design.</i></p>
+
+
+---
+
 ## 🔍 Takeaways
 
 - **UNet++** is the most accurate here (best Dice/IoU).
