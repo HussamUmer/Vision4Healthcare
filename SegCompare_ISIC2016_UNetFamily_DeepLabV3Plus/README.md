@@ -133,7 +133,7 @@ _Figure 4. Peak VRAM during inference (lower is better)._
 - **Step 11** Threshold & calibration (PR/ROC, sweeps, ECE)  
 - **Step 12** Final summary export (JSON + CSV) for tables/plots
 
-> 🔁 To add **your** model: duplicate a notebook and **replace Step 6** only (keep the same forward API). Everything else just works.
+> 🔁 To add **another** model: duplicate a notebook and **replace Step 6** only (keep the same forward API). Everything else just works.
 
 ---
 
