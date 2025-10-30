@@ -1,6 +1,5 @@
 # UNet Family vs DeepLabV3+: Strong, Efficient Baselines on ISIC-2016
-
-> **Status:** 🚧 _Under construction — figures coming soon_  
+ 
 > **Goal:** Reproduce and compare three classic, high-performing 2D segmentation models (**UNet, UNet++, DeepLabV3+**) on **ISIC-2016** using one unified, research-grade pipeline where **only Step 6 (the model block)** changes.
 
 ![Task](https://img.shields.io/badge/Task-Segmentation-blue)
