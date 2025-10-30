@@ -141,8 +141,8 @@ _Figure 4. Peak VRAM during inference (lower is better)._
 
 | Model       | Launch |
 |-------------|--------|
-| UNet        | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/HussamUmer/Vision4Healthcare/blob/main/SegCompare_ISIC2016_UNetFamily_DeepLabV3Plus/note%20book/UNET++R34_BaseLine.ipynb) |
-| UNet++      | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/HussamUmer/Vision4Healthcare/blob/main/SegCompare_ISIC2016_UNetFamily_DeepLabV3Plus/note%20book/UNETR34_BaseLine.ipynb) |
+| UNet        | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/HussamUmer/Vision4Healthcare/blob/main/SegCompare_ISIC2016_UNetFamily_DeepLabV3Plus/note%20book/UNETR34_BaseLine.ipynb) |
+| UNet++      | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/HussamUmer/Vision4Healthcare/blob/main/SegCompare_ISIC2016_UNetFamily_DeepLabV3Plus/note%20book/UNET++R34_BaseLine.ipynb) |
 | DeepLabV3+  | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/HussamUmer/Vision4Healthcare/blob/main/SegCompare_ISIC2016_UNetFamily_DeepLabV3Plus/note%20book/dlab_r50_model_BaseLine.ipynb) |
 
 
