@@ -66,9 +66,15 @@ Strong, **transparent baselines** matter. This repo delivers:
 | UNet++      | **0.9194**| **0.8577** |
 | DeepLabV3+  | 0.9158    | 0.8531   |
 
-_Figure 1. Test Dice & IoU comparison (bar chart)._  
-**Graph:** _[Insert Plotly link]_
+<h3 align="center">Figure 1 — Test Dice & IoU (bar chart)</h3>
+<p align="center">
+  <img src="https://github.com/HussamUmer/Vision4Healthcare/blob/main/SegCompare_ISIC2016_UNetFamily_DeepLabV3Plus/output_figures/graphs/newwplot.png" alt="Test Dice & IoU comparison" width="900">
+</p>
+<p align="center"><i>Figure 1. Test Dice & IoU comparison (bar chart).</i></p>
 
+**Takeaways**
+- **UNet++** tops both Dice and IoU in our runs.  
+- **DeepLabV3+** is a close second; **UNet** is slightly behind but stable.
 ---
 
 ### Table 2 — **Test Loss**
