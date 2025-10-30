@@ -107,7 +107,7 @@ Strong, **transparent baselines** matter. This repo delivers:
 <h3 align="center">Figure 3 — Inference Latency (lower is better)</h3>
 
 <p align="center">
-  <img src="https://github.com/HussamUmer/Vision4Healthcare/blob/main/SegCompare_ISIC2016_UNetFamily_DeepLabV3Plus/output_figures/graphs/newwplot (2).png" alt="Inference latency comparison" width="900">
+  <img src="https://github.com/HussamUmer/Vision4Healthcare/blob/main/SegCompare_ISIC2016_UNetFamily_DeepLabV3Plus/output_figures/graphs/newplot (2).png" alt="Inference latency comparison" width="900">
 </p>
 <p align="center"><i>Figure 3. Inference latency (lower is better).</i></p>
 
@@ -127,7 +127,7 @@ Strong, **transparent baselines** matter. This repo delivers:
 <h3 align="center">Figure 4 — Peak VRAM (lower is better)</h3>
 
 <p align="center">
-  <img src="https://github.com/HussamUmer/Vision4Healthcare/blob/main/SegCompare_ISIC2016_UNetFamily_DeepLabV3Plus/output_figures/graphs/newwplot (3).png" alt="Peak VRAM comparison" width="900">
+  <img src="https://github.com/HussamUmer/Vision4Healthcare/blob/main/SegCompare_ISIC2016_UNetFamily_DeepLabV3Plus/output_figures/graphs/newplot (3).png" alt="Peak VRAM comparison" width="900">
 </p>
 <p align="center"><i>Figure 4. Peak VRAM during inference (lower is better).</i></p>
 
