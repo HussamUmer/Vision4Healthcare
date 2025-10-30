@@ -1,12 +1,14 @@
-# UNet Family vs DeepLabV3+: Strong, Efficient Baselines on ISIC-2016
- 
-> **Goal:** Reproduce and compare three classic, high-performing 2D segmentation models (**UNet, UNet++, DeepLabV3+**) on **ISIC-2016** using one unified, research-grade pipeline where **only Step 6 (the model block)** changes.
-
 ![Task](https://img.shields.io/badge/Task-Segmentation-blue)
 ![Dataset](https://img.shields.io/badge/Dataset-ISIC2016-orange)
 ![Models](https://img.shields.io/badge/Models-UNet%20%7C%20UNet%2B%2B%20%7C%20DeepLabV3%2B-green)
 ![Framework](https://img.shields.io/badge/Framework-PyTorch-black)
 ![Pipeline](https://img.shields.io/badge/Pipeline-Plug--and--Play-purple)
+
+# UNet Family vs DeepLabV3+: Strong, Efficient Baselines on ISIC-2016
+ 
+> **Goal:** Reproduce and compare three classic, high-performing 2D segmentation models (**UNet, UNet++, DeepLabV3+**) on **ISIC-2016** using one unified, research-grade pipeline where **only Step 6 (the model block)** changes.
+
+
 
 ---
 
