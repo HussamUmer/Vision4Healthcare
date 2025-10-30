@@ -17,7 +17,7 @@ Strong, **transparent baselines** matter. This repo delivers:
 
 - **One plug-and-play pipeline**: identical data handling, losses, metrics, logging & evaluation — **swap only Step 6** to change the model.
 - **Apples-to-apples comparisons**: same training and evaluation policy; we report accuracy, loss, speed, params, MACs, and memory.
-- **Ready for your models**: paste your model into Step 6 (forward API: `model(x) → {"logits": (B,1,H,W)}`) and reuse everything else.
+- **Ready for models**: paste model into Step 6 (forward API: `model(x) → {"logits": (B,1,H,W)}`) and reuse everything else.
 
 ---
 
@@ -58,8 +58,6 @@ Strong, **transparent baselines** matter. This repo delivers:
 ---
 
 ## 📊 Results
-
-> Fill-in values below are from your provided summaries.
 
 ### Table 1 — **Test Dice & IoU**
 | Model       | Test Dice | Test IoU |
