@@ -84,8 +84,16 @@ Strong, **transparent baselines** matter. This repo delivers:
 | UNet++      | **0.1024** |
 | DeepLabV3+  | 0.1033    |
 
-_Figure 2. Test loss comparison (bar chart)._  
-**Graph:** _[Insert Plotly link]_
+<h3 align="center">Figure 2 — Test Loss (bar chart)</h3>
+
+<p align="center">
+  <img src="https://github.com/HussamUmer/Vision4Healthcare/blob/main/SegCompare_ISIC2016_UNetFamily_DeepLabV3Plus/output_figures/graphs/newplot (1).png" alt="Test Loss comparison" width="900">
+</p>
+<p align="center"><i>Figure 2. Test loss comparison (bar chart).</i></p>
+
+**Takeaways**
+- **UNet++** achieves the lowest test loss.  
+- **DeepLabV3+** is close; **UNet** shows a marginally higher loss.
 
 ---
 
@@ -96,8 +104,16 @@ _Figure 2. Test loss comparison (bar chart)._
 | UNet++      | 31.21      |
 | DeepLabV3+  | 31.93      |
 
-_Figure 3. Inference latency (lower is better)._  
-**Graph:** _[Insert Plotly link]_
+<h3 align="center">Figure 3 — Inference Latency (lower is better)</h3>
+
+<p align="center">
+  <img src="https://github.com/HussamUmer/Vision4Healthcare/blob/main/SegCompare_ISIC2016_UNetFamily_DeepLabV3Plus/output_figures/graphs/newwplot (2).png" alt="Inference latency comparison" width="900">
+</p>
+<p align="center"><i>Figure 3. Inference latency (lower is better).</i></p>
+
+**Takeaways**
+- **UNet** is the fastest (lowest ms per image).  
+- **UNet++** and **DeepLabV3+** trade a bit of speed for accuracy.
 
 ---
 
@@ -108,8 +124,16 @@ _Figure 3. Inference latency (lower is better)._
 | UNet++      | 466.23          |
 | DeepLabV3+  | 468.60          |
 
-_Figure 4. Peak VRAM during inference (lower is better)._  
-**Graph:** _[Insert Plotly link]_
+<h3 align="center">Figure 4 — Peak VRAM (lower is better)</h3>
+
+<p align="center">
+  <img src="https://github.com/HussamUmer/Vision4Healthcare/blob/main/SegCompare_ISIC2016_UNetFamily_DeepLabV3Plus/output_figures/graphs/newwplot (3).png" alt="Peak VRAM comparison" width="900">
+</p>
+<p align="center"><i>Figure 4. Peak VRAM during inference (lower is better).</i></p>
+
+**Takeaways**
+- **UNet** uses the least memory.  
+- **UNet++** and **DeepLabV3+** need moderately more VRAM due to added complexity.
 
 ---
 
