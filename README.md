@@ -37,6 +37,9 @@ Here, I explore algorithms that **identify, separate, and analyze specific regio
 - 👁️ [Retina Blood Vessel Segmentation using Attention U-Net](https://github.com/HussamUmer/Vision4Healthcare/tree/main/RetinaBloodVessel_AttentionUNet_Seg)
 - 📡 [UltraSeg-Bench: AbdomenUSMS Comparative Study](https://github.com/HussamUmer/Vision4Healthcare/tree/main/UltraSeg-Bench:%20AbdomenUSMS%20Comparative%20Study)
 - 🩺 [Polyp Segmentation with U-Net and TransUNet on Kvasir-SEG](https://github.com/HussamUmer/Vision4Healthcare/tree/main/PolyP_Segmentation_Model_Comaparison)
+- 🔗 **SegCompare — ISIC2016: UNet Family vs DeepLabV3+**  
+  [https://github.com/HussamUmer/Vision4Healthcare/tree/main/SegCompare_ISIC2016_UNetFamily_DeepLabV3Plus](https://github.com/HussamUmer/Vision4Healthcare/tree/main/SegCompare_ISIC2016_UNetFamily_DeepLabV3Plus)
+
 - 🚀 [Lite Yet Sharp: Gated Skips and Depthwise Decoders for Fast TransUNet Segmentation](https://github.com/HussamUmer/transunet-lite)
 
 Each segmentation project includes:
