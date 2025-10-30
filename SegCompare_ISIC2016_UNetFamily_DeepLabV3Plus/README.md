@@ -68,7 +68,7 @@ Strong, **transparent baselines** matter. This repo delivers:
 
 <h3 align="center">Figure 1 — Test Dice & IoU (bar chart)</h3>
 <p align="center">
-  <img src="https://github.com/HussamUmer/Vision4Healthcare/blob/main/SegCompare_ISIC2016_UNetFamily_DeepLabV3Plus/output_figures/graphs/newwplot.png" alt="Test Dice & IoU comparison" width="900">
+  <img src="https://github.com/HussamUmer/Vision4Healthcare/blob/main/SegCompare_ISIC2016_UNetFamily_DeepLabV3Plus/output_figures/graphs/newplot.png" alt="Test Dice & IoU comparison" width="900">
 </p>
 <p align="center"><i>Figure 1. Test Dice & IoU comparison (bar chart).</i></p>
 
